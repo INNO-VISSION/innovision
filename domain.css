@@ -1,0 +1,182 @@
+/* General Section Styling */
+.domains {
+    margin-top: 100px;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.domains h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.domains h2 span {
+    color: #1fc1ff;  /* Highlight color for "Our" */
+}
+
+.domains p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Courses Container */
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+/* Course Card Styling */
+.course-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;              /* Use Flexbox */
+    flex-direction: column;     /* Arrange elements vertically */
+    justify-content: space-between;  /* Push button to the bottom */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+    overflow: hidden;
+    height: 100%;               /* Ensure cards take full height */
+}
+
+.course-info {
+    padding: 20px;
+    flex: 1;  /* Ensures the content area expands */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.get-courses-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #1fc1ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: auto;  /* Pushes button to the bottom */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: flex-start;  /* Aligns the button to the left */
+}
+
+.get-courses-btn:hover {
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .courses {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card {
+        width: 90%;
+    }
+}
+
+/* Scroll Reveal Animation */
+.domains {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.domains.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Existing Media Queries */
+/* Adjust for tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .courses {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+        gap: 20px; /* Slightly reduce the gap */
+    }
+
+    .course-card {
+        width: 80%; /* Increase width for better use of screen space */
+    }
+
+    .domains h2 {
+        font-size: 2rem; /* Slightly reduce heading size */
+    }
+
+    .domains p {
+        font-size: 1.1rem; /* Adjust paragraph size */
+    }
+}
+
+/* Adjust for mobile devices (up to 768px) */
+@media (max-width: 768px) {
+    .courses {
+        grid-template-columns: 1fr; /* Single column for smaller screens */
+        gap: 15px;
+    }
+
+    .course-card {
+        width: 90%; /* Take more width to fill the screen */
+        margin: 0 auto; /* Center align the cards */
+    }
+
+    .domains h2 {
+        font-size: 1.8rem; /* Smaller heading */
+    }
+
+    .domains p {
+        font-size: 1rem; /* Adjust paragraph size */
+        margin-bottom: 30px;
+    }
+
+    .get-courses-btn {
+        padding: 8px 12px; /* Slightly smaller button padding */
+        font-size: 0.9rem;
+    }
+
+    .explore-more {
+        padding: 10px 20px; /* Adjust padding */
+        font-size: 1rem;
+    }
+}
+
+/* Very small devices (up to 480px) */
+@media (max-width: 480px) {
+    .domains {
+        padding: 40px 10px; /* Reduce padding */
+    }
+
+    .domains h2 {
+        font-size: 1.5rem; /* Smaller heading for compact view */
+    }
+
+    .courses {
+        gap: 10px; /* Smaller gap between cards */
+    }
+
+    .course-card {
+        width: 95%; /* Maximize card width */
+    }
+
+    .course-info {
+        padding: 15px; /* Adjust padding inside cards */
+    }
+
+    .get-courses-btn {
+        padding: 7px 10px;
+        font-size: 0.8rem;
+    }
+}
