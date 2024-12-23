@@ -1,15 +1,18 @@
 /* General Section Styling */
+
 .domains {
     margin-top: 100px;
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 .domains h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #333;
+    animation: slideInFromLeft 1s ease-in-out;
 }
 
 .domains h2 span {
@@ -20,6 +23,7 @@
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 40px;
+    animation: slideInFromRight 1s ease-in-out;
 }
 
 /* Courses Container */
@@ -44,6 +48,7 @@
     text-align: left;
     overflow: hidden;
     height: 100%;               /* Ensure cards take full height */
+    animation: fadeInUp 1s ease-in-out;
 }
 
 .course-info {
@@ -100,6 +105,50 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 /* Existing Media Queries */
 /* Adjust for tablets (768px - 1024px) */
 @media (max-width: 1024px) {

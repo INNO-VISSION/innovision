@@ -8,9 +8,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+.goog-logo-link, .goog-te-gadget {
+    display: none !important;
+}
 body {
-    background-color: white;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    top: 0 !important;
     width: 100%;
     font-family: "Noto Sans", sans-serif;
 }
@@ -195,13 +201,20 @@ span {
 
 #about {
     padding: 60px 20px;
-    background: #fff;
+    /* background: linear-gradient(135deg, #f5f7fa, #c3cfe2); */
     text-align: center;
+    transition: background 0.5s ease-in-out;
 }
 
+/* #about:hover {
+    background: linear-gradient(135deg, #c3cfe2, #f5f7fa);
+} */
+
 #about h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #333;
+    animation: fadeInDown 1s ease-in-out;
 }
 
 #about h1 span {
@@ -210,26 +223,55 @@ span {
 
 #about p {
     color: #555;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
 }
-.about-content p{
+
+.about-content p {
     color: #555;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 .courses-section h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
-
+    color: #333;
+    animation: fadeInDown 1s ease-in-out;
 }
 
 .about-content h6 {
     font-weight: 200;
     margin-bottom: 20px;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    color: #666;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .schedule-container {

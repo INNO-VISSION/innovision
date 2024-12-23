@@ -123,7 +123,7 @@
                 full potential.
             </h6>
         </div>
-        <section class="team-section">
+        <!-- <section class="team-section">
             <div class="team-content">
                 <h1>Meet Our Team</h1>
                 <p>Our team is composed of dedicated professionals who are passionate about technology and innovation. Each
@@ -206,7 +206,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </section>
     <section id="blog" class="blog">
         <div class="domains-content">
@@ -239,7 +239,6 @@
                         <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
-
             </div>
 
         </div>
@@ -313,12 +312,13 @@
                     <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://youtube.com/@innovisio.n?si=uZ9aN5GxDTiatZxy" class="social-icon"><i class="fab fa-youtube"></i></a>
                 </div>
-                <select class="language-select">
-                    <option>Select Language</option>
-                    <option>English</option>
-                    <option>Telugu</option>
-                    <option>Hindi</option>
+                <select class="language-select" onchange="translateLanguage(this.value)">
+                    <option value="">Select Language</option>
+                    <option value="en">English</option>
+                    <option value="te">Telugu</option>
+                    <option value="hi">Hindi</option>
                 </select>
+                <div id="google_translate_element" style="display: none;"></div>
             </div>
         </div>
         <div class="footer-bottom">
@@ -326,8 +326,9 @@
             <p class="company-name"><span>Inno</span>Vision</p>
         </div>
     </footer>
-
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="script.js"></script>
+    <script src="transulator.js"></script>
 </body>
 
 </html>

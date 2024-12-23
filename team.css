@@ -1,6 +1,6 @@
 /* Base styles (already provided) */
 .team-section {
-    background-color: #0f2c61;
+    background: linear-gradient(135deg, #0f2c61, #1e90ff);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -15,11 +15,11 @@
 .team-content h1 {
     font-size: 3rem;
     margin-bottom: 20px;
-    color: #1e90ff;
+    color: #ffdd57;
 }
 
 .team-content p {
-    color: #ccc;
+    color: #f0f0f0;
     margin-bottom: 30px;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -28,16 +28,17 @@
 .contact-button {
     padding: 12px 30px;
     font-size: 1rem;
-    background-color: #1e90ff;
-    color: white;
+    background-color: #ffdd57;
+    color: #0f2c61;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .contact-button:hover {
-    background-color: #0f6cd4;
+    background-color: #ffc107;
+    transform: scale(1.05);
 }
 
 .team-container {
@@ -58,7 +59,8 @@
     color: #333;
     padding: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .team-member img {
@@ -90,6 +92,18 @@
 }
 .team-member:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Responsive styles */
