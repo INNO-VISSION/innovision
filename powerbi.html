@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="python.css">
+    <title>InnoVision</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <img src="images\logo.png" alt="InnoVision Logo"> -->
+                <div class="logo-heading">
+                    <h2>Inno<span>Vision</span></h2>
+                </div>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu" id="menu">
+                <img src="images/logo.png" alt="InnoVision Logo">
+                <ul class="nav-link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="domains" class="courses-section">
+        <h2>Power<span> BI</span></h2>
+        <div class="schedule-container">
+            <div class="session">
+                <div class="session-header">
+                    <span class="status">Upcoming</span>
+                    <span class="date-time"></span>
+                    <span class="new-tag">New</span>  <!-- Added New Tag -->
+                </div>
+                <div class="session-details">
+                    <h3>Introduction To Python</h3>
+                    <div class="actions">
+                        <a class="play-button" href="#">▶</a>
+                        <a href="#" class="feedback">Notes</a>
+                        <a href="#" class="feedback">Feedback?</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat the session div for other sessions -->
+            <div class="session">
+                <div class="session-header">
+                    <span class="status">Upcoming</span>
+                    <span class="date-time"></span>
+                    <span class="new-tag">New</span>  <!-- Added New Tag -->
+                </div>
+                <div class="session-details">
+                    <h3>Python Programming</h3>
+                    <div class="actions">
+                        <a class="play-button" href="#">▶</a>
+                        <a href="#" class="feedback">Notes</a>
+                        <a href="#" class="feedback">Feedback?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            #domains {
+                margin-top:150px;
+            }
+
+            #domains .explore-more {
+                display: none;
+            }
+        </style>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="#">Programming</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Business</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Webinars</a></li>
+                    <li><a href="#">E-books</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Getting started</a></li>
+                    <li><a href="#">Network status</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Referral program</a></li>
+                </ul>
+            </div>
+            <div class="footer-section subscribe">
+                <h3>Subscribe</h3>
+                <input type="email" placeholder="Enter email address" id="email">
+                <button onclick="subscribe()">Send</button>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/innovisio.n/profilecard/?igsh=OHoxZXdsb245bnpp" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://youtube.com/@innovisio.n?si=uZ9aN5GxDTiatZxy" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <select class="language-select">
+                    <option>Select Language</option>
+                    <option>English</option>
+                    <option>Telugu</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&COPY;2024 All rights reserved.</p>
+            <p class="company-name"><span>Inno</span>Vision</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+
+</body>

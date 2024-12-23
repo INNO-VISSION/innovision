@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="team.css">
+    <title>InnoVision</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- <img src="images\logo.png" alt="InnoVision Logo"> -->
+                <div class="logo-heading">
+                    <h2>Inno<span>Vision</span></h2>
+                </div>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menu" id="menu">
+                <img src="images/logo.png" alt="InnoVision Logo">
+                <ul class="nav-link">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home" class="home">
+        <div class="home-content">
+            <img src="images/img1.jpg" alt="home">
+            <div class="home-text">
+                <h1>What Is <span>InnoVision</span></h1>
+                <p>InnoVision provides all educational related content and courses through online platforms. Our mission
+                    is to make learning accessible and engaging for everyone, everywhere.</p>
+            </div>
+        </div>
+        <a href="domains.html" class="start-learning">Let's Start Learning</a>
+        <script>
+            // Function to check if an element is in the viewport
+            function isInViewport(element) {
+                const rect = element.getBoundingClientRect();
+                return rect.top < window.innerHeight && rect.bottom > 0;
+            }
+
+            // Function to reveal the section
+            function revealOnScroll() {
+                const revealSection = document.querySelector('#home');
+                if (isInViewport(revealSection)) {
+                    revealSection.classList.add('revealed');
+                }
+            }
+
+            // Listen for scroll events
+            window.addEventListener('scroll', revealOnScroll);
+
+            // Initial check to ensure the animation is triggered if the section is already in view
+            revealOnScroll();
+
+
+        </script>
+    </section>
+    <section id="domains" class="courses-section">
+        <h2>Upcoming<span> Courses</span></h2>
+        <div class="schedule-container">
+            <div class="session">
+                <div class="session-header">
+                    <span class="status">Upcoming</span>
+                    <span class="date-time">03 Dec 2024 | 7:00 PM</span>
+                    <span class="new-tag">New</span> <!-- Added New Tag -->
+                </div>
+                <div class="session-details">
+                    <h3>Introduction To Python</h3>
+                    <div class="actions">
+                        <a class="play-button" href="#">▶</a>
+                        <a href="#" class="feedback">Notes</a>
+                        <a href="#" class="feedback">Feedback?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="session">
+                <div class="session-header">
+                    <span class="status">Upcoming</span>
+                    <span class="date-time">07 Dec 2024 | 7:00 PM</span>
+                    <span class="new-tag">New</span>
+                </div>
+                <div class="session-details">
+                    <h3>ATS Friendly Resume Building</h3>
+                    <div class="actions">
+                        <a class="play-button" href="#">▶</a>
+                        <a href="#" class="feedback">Notes</a>
+                        <a href="#" class="feedback">Feedback?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h1>About <span>Us</span></h1>
+            <p><span>InnoVision:</span> Empowering India’s Future through Upskilling.
+                Our mission is to enhance employability and contribute to India's economic growth and technological
+                advancement.
+
+                InnoVision: Empowering India's Future, One Skill at a Time.
+            Bharat is emerging as a platform dedicated to shaping the future of India by empowering its people
+            InnoVision: Empowering India's Future, One Skill at a Time.</p>
+            <h6>Join us on our mission to make education a lifelong journey and empower individuals to achieve their
+                full potential.
+            </h6>
+        </div>
+        <section class="team-section">
+            <div class="team-content">
+                <h1>Meet Our Team</h1>
+                <p>Our team is composed of dedicated professionals who are passionate about technology and innovation. Each
+                    member brings unique skills and expertise to the table, working collaboratively to drive our mission
+                    forward. Together, we strive to create impactful solutions and empower individuals through education and
+                    upskilling.</p>
+                <a href="contact.html" class="contact-button">Contact Us</a>
+            </div>
+            <div class="team-container">
+                <div class="team-member" style="top: 10%; left: 10%;">
+                    <img src="images/pramod-img.png" alt="">
+                    <h3>PRAMOD REDDY</h3>
+                    <p class="role">Founder</p>
+                    <div class="member-social-icons">
+                        <a href="https://www.linkedin.com/in/vpramodreddy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/pramod6005_/profilecard/?igsh=MW83OXVkdHY1cDZ5bg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member" style="top: 40%; left: 30%;">
+                    <img src="images/redappa-img.jpg" alt="">
+                    <h3>REDEPPA M</h3>
+                    <p class="role">Database Programmer</p>
+                    <div class="member-social-icons">
+                        <a href="https://www.linkedin.com/in/masireddy-reddeppa-reddy-a5248a2b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/psycho_reddy_2005/profilecard/?igsh=Ym0yYTZtdDh3MGt3" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member" style="top: 20%; left: 60%;">
+                    <img src="images/rani-img.png" alt="">
+                    <h3>REDDY RANI</h3>
+                    <p class="role">Web Developer</p>
+                    <div class="member-social-icons">     
+                        <a href="https://www.linkedin.com/in/reddy-rani-beedhagani-ba86462b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/raniyadav1408/profilecard/?igsh=MTA5NWg2aWoyNGU2eg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                       
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member" style="top: 60%; left: 50%;">
+                    <img src="images/shanthi-img.jpg" alt="">
+                    <h3>SANTHI M</h3>
+                    <p class="role">Python Developer</p>
+                    <div class="member-social-icons">
+                        <a href="https://www.linkedin.com/in/masireddy-santhi-a33619289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/masireddysanthi?igsh=MW1xZTMxOTVwcmg0ZQ==" target="_blank"><i class="fab fa-instagram"></i></a>         
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member" style="top: 60%; left: 50%;">
+                    <img src="images/sruthi-img.jpg" alt="">
+                    <h3>SRUTHI CHOWDARY</h3>
+                    <p class="role">Soft Skills Trainer</p>
+                    <div class="member-social-icons">
+                        <a href="https://www.linkedin.com/in/sruthi-durgirala-50969b294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/sruthi.chowdary_45?utm_source=qr&igsh=MWg1b2VlZm14bW8zdQ==" target="_blank"><i class="fab fa-instagram"></i></a>             
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member" style="top: 60%; left: 50%;">
+                    <img src="images/jahnavi_img.jpg" alt="">
+                    <h3>JAHNAVI B</h3>
+                    <p class="role">Power BI Developer</p>
+                    <div class="member-social-icons">
+                        <a href="hhttps://www.linkedin.com/in/bodireddy-jahnavi-47563a255" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                       
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="team-member" style="top: 60%; left: 50%;">
+                    <img src="images/hemanth-img.png" alt="">
+                    <h3>HEMANTH</h3>
+                    <p class="role">Java Developer</p>
+                    <div class="member-social-icons">
+                        <a href="https://www.linkedin.com/in/hemanthkumar-k-s?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/hemanthprashanth5?igsh=MTZ3ZWhyb2xhOGhodg==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/Hemanth22269502?s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="blog" class="blog">
+        <div class="domains-content">
+            <h2>Our <span>Blog</span></h2>
+            <p>Stay updated with the latest trends, tips, and insights from the world of technology and education.</p>
+            <div class="courses">
+                <div class="course-card">
+                    <!-- <img src="path/to/blog2.jpg" alt="Blog 2" class="blog-image"> -->
+                    <div class="course-info">
+                        <h3>Introduction to Quantum Computing</h3>
+                        <p>Learn about the basics of quantum computing and how it differs from classical computing.</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <!-- <img src="path/to/blog4.jpg" alt="Blog 4" class="blog-image"> -->
+                    <div class="course-info">
+                        <h3>Future of Blockchain</h3>
+                        <p>Discover how blockchain technology is revolutionizing various sectors and what the future
+                            holds for this innovative technology.</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <!-- <img src="images/blog3.jpg" alt="Blog 3" class="blog-image"> -->
+                    <div class="course-info">
+                        <h3>Advancements in AI</h3>
+                        <p>Explore the latest advancements in artificial intelligence and their impact on various
+                            industries.</p>
+                        <a href="#" class="read-more-btn">Read More</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <a href="blog.html" class="explore-more">Explore More Blogs</a>
+
+    </section>
+    <!-- <section id="contact">
+        <div class="contact-content">
+            <h2>Contact <span>Us</span></h2>
+            <p>Have a question or feedback? Feel free to reach out to us. We'd love to hear from you!</p>
+            <form action="app.py" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sitemap</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="domains.html">Domains</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Courses</h3>
+                <ul>
+                    <li><a href="#">Programming</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Business</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tutorials</a></li>
+                    <li><a href="#">Webinars</a></li>
+                    <li><a href="#">E-books</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Getting started</a></li>
+                    <li><a href="#">Network status</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Referral program</a></li>
+                </ul>
+            </div>
+            <div class="footer-section subscribe">
+                <h3>Subscribe</h3>
+                <input type="email" placeholder="Enter email address" id="email">
+                <button onclick="subscribe()">Send</button>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/innovisio.n/profilecard/?igsh=OHoxZXdsb245bnpp" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://youtube.com/@innovisio.n?si=uZ9aN5GxDTiatZxy" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                <select class="language-select">
+                    <option>Select Language</option>
+                    <option>English</option>
+                    <option>Telugu</option>
+                    <option>Hindi</option>
+                </select>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&COPY;2024 All rights reserved.</p>
+            <p class="company-name"><span>Inno</span>Vision</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
