@@ -121,6 +121,7 @@ nav {
 
 .menu-toggle:hover {
     color: #66bb6a;
+    
 }
 
 .nav-explore {
@@ -656,6 +657,7 @@ footer {
         display: block;
         margin-right: 30px;
     } 
+   
     .menu {
         position: fixed;
         top: 0;
