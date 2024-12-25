@@ -364,7 +364,7 @@ span {
 .blog {
     padding: 60px 20px;
     text-align: center;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 
 .blog h2 {
