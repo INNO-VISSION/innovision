@@ -9,7 +9,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="domain.css">
+    <link rel="stylesheet" href="python.css">
     <title>InnoVision</title>
 </head>
 
@@ -28,84 +28,62 @@
             <div class="menu" id="menu">
                 <img src="images/logo.png" alt="InnoVision Logo">
                 <ul class="nav-link">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="domains.html">Domains</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/domains.html">Domains</a></li>
+                    <li><a href="/blog/blog.html">Blog</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
 
 
                 </ul>
             </div>
         </nav>
     </header>
-    <section id="blog" class="blog">
-        <div class="domains-content">
-            <h2>Our <span>Blog</span></h2>
-            <p>Stay updated with the latest trends, tips, and insights from the world of technology and education.</p>
-            <div class="courses">
-                <div class="course-card">
-                    <div class="course-info">
-                        <h3>Introduction to Quantum Computing</h3>
-                        <p>Learn about the basics of quantum computing and how it differs from classical computing.</p>
-                        <a href="#" class="read-more-btn">Read More</a>
+    <section id="domains" class="courses-section">
+        <h2>Communication<span> Skills</span></h2>
+        <div class="schedule-container">
+            <div class="session">
+                <div class="session-header">
+                    <span class="status">Upcoming</span>
+                    <span class="date-time"></span>
+                    <span class="new-tag">New</span> <!-- Added New Tag -->
+                </div>
+                <div class="session-details">
+                    <h3>Introduction To Python</h3>
+                    <div class="actions">
+                        <a class="play-button" href="#">▶</a>
+                        <a href="#" class="feedback">Notes</a>
+                        <a href="#" class="feedback">Feedback?</a>
                     </div>
                 </div>
-                <div class="course-card">
-                    <div class="course-info">
-                        <h3>Future of Blockchain</h3>
-                        <p>Discover how blockchain technology is revolutionizing various sectors and what the future holds for this innovative technology.</p>
-                        <a href="#" class="read-more-btn">Read More</a>
-                    </div>
+            </div>
+            <!-- Repeat the session div for other sessions -->
+            <div class="session">
+                <div class="session-header">
+                    <span class="status">Upcoming</span>
+                    <span class="date-time"></span>
+                    <span class="new-tag">New</span> <!-- Added New Tag -->
                 </div>
-                <div class="course-card">
-                    <div class="course-info">
-                        <h3>Advancements in AI</h3>
-                        <p>Explore the latest advancements in artificial intelligence and their impact on various industries.</p>
-                        <a href="#" class="read-more-btn">Read More</a>
+                <div class="session-details">
+                    <h3>Python Programming</h3>
+                    <div class="actions">
+                        <a class="play-button" href="#">▶</a>
+                        <a href="#" class="feedback">Notes</a>
+                        <a href="#" class="feedback">Feedback?</a>
                     </div>
                 </div>
             </div>
         </div>
-        <a href="blog.html" class="explore-more">Explore More Blogs</a>
-    </section>
-    
-    <style>
-        #blog {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 1s ease, transform 1s ease;
-            margin-top: 100px;
-        }
-    
-        #blog.revealed {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    
-        #blog .explore-more {
-            display: none;
-        }
-    </style>
-    
-    <script>
-        function isInViewport(element) {
-            const rect = element.getBoundingClientRect();
-            return rect.top < window.innerHeight && rect.bottom > 0;
-        }
-    
-        function revealOnScroll() {
-            const revealSection = document.querySelector('#blog');
-            if (isInViewport(revealSection)) {
-                revealSection.classList.add('revealed');
-                window.removeEventListener('scroll', revealOnScroll);  // Optimization
+        <style>
+            #domains {
+                margin-top: 150px;
             }
-        }
-    
-        window.addEventListener('scroll', revealOnScroll);
-        revealOnScroll();  // Run once on load
-    </script>
-    
+
+            #domains .explore-more {
+                display: none;
+            }
+        </style>
+    </section>
     <!-- Footer -->
     <footer>
         <div class="footer-container">
@@ -155,9 +133,10 @@
                 <button onclick="subscribe()">Send</button>
                 <div class="social-icons">
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/innovisio.n/profilecard/?igsh=OHoxZXdsb245bnpp" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://youtube.com/@innovisio.n?si=uZ9aN5GxDTiatZxy" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
                 </div>
                 <select class="language-select">
                     <option>Select Language</option>
@@ -172,5 +151,8 @@
             <p class="company-name"><span>Inno</span>Vision</p>
         </div>
     </footer>
+    </footer>
     <script src="script.js"></script>
-    </body>
+
+
+</body>

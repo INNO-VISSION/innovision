@@ -55,7 +55,14 @@ nav {
 .logo h2 {
     margin-left: 10px;
 }
-
+.logo-heading a {
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    line-height: 80px;
+    text-align: center;
+    align-items: center;
+}
 .menu {
     top: 0;
     left: -250px;
@@ -66,7 +73,6 @@ nav {
     justify-content: center;
     transition: left 0.5s ease;
 }
-
 .nav-link {
     display: flex;
     align-items: center;
@@ -164,12 +170,6 @@ nav {
 
 span {
     color: #1fc1ff;
-}
-
-.logo-heading {
-    line-height: 80px;
-    text-align: center;
-    align-items: center;
 }
 
 .home-text p {
@@ -317,7 +317,7 @@ span {
 
 .play-button {
     font-size: 18px;
-    color: #007bff;
+    color: #1fc1ff;
     border: none;
     background: none;
     cursor: pointer;
@@ -374,7 +374,7 @@ span {
 }
 
 .blog h2 span {
-    color: #1e90ff;
+    color: #1fc1ff;
 }
 
 .blog p {
@@ -425,7 +425,7 @@ span {
 .read-more-btn {
     display: inline-block;
     text-decoration: none;
-    background-color: #1e90ff;
+    background-color: #1fc1ff;
     color: white;
     padding: 8px 15px;
     border-radius: 5px;
@@ -503,7 +503,7 @@ form textarea {
 form input[type="text"]:focus,
 form input[type="email"]:focus,
 form textarea:focus {
-    border-color: #007bff;
+    border-color: #1fc1ff;
     outline: none;
 }
 
@@ -514,7 +514,7 @@ form textarea {
 
 form button {
     padding: 12px 20px;
-    background-color: #007bff;
+    background-color: #1fc1ff;
     color: #fff;
     border: none;
     border-radius: 5px;
