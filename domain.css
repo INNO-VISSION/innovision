@@ -60,6 +60,7 @@
 }
 
 .get-courses-btn {
+    color :#f5f7fa;
     display: inline-block;
     text-decoration: none;
     background-color: #1fc1ff;
@@ -69,7 +70,7 @@
     font-weight: bold;
     margin-top: auto;  /* Pushes button to the bottom */
     transition: background-color 0.3s ease, transform 0.3s ease;
-    align-self: flex-start;  /* Aligns the button to the left */
+    align-self: flex-end;  /* Aligns the button to the left */
 }
 
 .get-courses-btn:hover {
@@ -162,11 +163,11 @@
     }
 
     .domains h2 {
-        font-size: 2rem; /* Slightly reduce heading size */
+        font-size: 1.5rem; /* Slightly reduce heading size */
     }
 
     .domains p {
-        font-size: 1.1rem; /* Adjust paragraph size */
+        font-size: 1rem; /* Adjust paragraph size */
     }
 }
 
@@ -183,7 +184,7 @@
     }
 
     .domains h2 {
-        font-size: 1.8rem; /* Smaller heading */
+        font-size: 1.3rem; /* Smaller heading */
     }
 
     .domains p {
