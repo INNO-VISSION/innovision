@@ -974,6 +974,77 @@ footer {
 .Privacy-Policy a:hover {
     text-decoration: underline;
 }
+.disclaimer {
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+}
+
+.disclaimer h1, .disclaimer h2, .disclaimer h3 {
+    color: #2c3e50;
+}
+
+.disclaimer p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.disclaimer ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.disclaimer ul li {
+    margin-bottom: 10px;
+}
+
+.disclaimer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.disclaimer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .disclaimer {
+        padding: 15px;
+    }
+
+    .disclaimer h1 {
+        font-size: 1.8em;
+    }
+
+    .disclaimer h2 {
+        font-size: 1.5em;
+    }
+
+    .disclaimer h3 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .disclaimer {
+        padding: 10px;
+    }
+
+    .disclaimer h1 {
+        font-size: 1.5em;
+    }
+
+    .disclaimer h2 {
+        font-size: 1.2em;
+    }
+
+    .disclaimer h3 {
+        font-size: 1em;
+    }
+}
 
 /* Responsive Styling */
 @media (max-width: 768px) {
