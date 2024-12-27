@@ -1,0 +1,57 @@
+.nptel-courses{
+    margin-top:100px;
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #50a3f7;
+    color: #000000;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 15px;
+    margin: 10px 0;
+    background-color: #e9edf1;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.sidebar ul li:hover {
+    background-color: #1abc9c;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ecf0f1;
+}
+
+.course-details {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.course-details.active {
+    display: block;
+}
+
+.course-details h3 {
+    margin-top: 0;
+}

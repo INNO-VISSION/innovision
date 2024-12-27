@@ -1,0 +1,44 @@
+.contact-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.contact-content
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #1fc1ff;
+    outline: none;
+}
+
+form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.contact-content form button {
+    padding: 12px 20px;
+    background-color: #1fc1ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #66bb6a;
+}
