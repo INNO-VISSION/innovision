@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="team.css"> -->
     <link rel="stylesheet" href="nptel.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>InnoVision</title>
 </head>
@@ -38,7 +39,7 @@
                         <ul id="suggestions-list" class="suggestions"></ul>
                     </div>
                     <i id="search-icon" class="fas fa-search"></i>
-                  
+
                 </div>
 
             </div>
@@ -61,32 +62,28 @@
     </header>
     <!-- Main Content -->
     <section class="nptel-courses">
+
         <div class="sidebar">
-            <h2>Courses</h2>
+            <h1>NPTEL Courses</h1>
+            <span class="new-tag">Upcoming</span>
             <ul>
-                <li onclick="showCourse('java')">programming in java</li>
-                <li onclick="showCourse('python')">joy of computing with python</li>
-                <li onclick="showCourse('c')">problem solving through c</li>
-                <li onclick="showCourse('iot')">internet of things</li>
-                <li onclick="showCourse('java')">programming in java</li>
-                <li onclick="showCourse('java')">programming in java</li>
+                <a href="#" data-course="iot">Introduction To Industry 4.0 And Idustrial Internet Of Things</a>
+                 <a href="#" data-course="java">Programming in Java</a>
+                <a href="#" data-course="python">The Joy of Computing Using Python</a>
+                <a href="#" data-course="sql">Introduction to Database System</a>
+                <a href="#" data-course="c">Problem Solving Through Programming in C</a>
+                <a href="#" data-course="oo">Fundamental of Object Oriented Programming</a>
+   
             </ul>
         </div>
         <div class="content">
-            <div id="java" class="course-details">
-              
+            <div class="week-list" id="week-list">
+                <h2>Weeks</h2>
+                <ul></ul>
             </div>
-            <div id="python" class="course-details">
-                <h3>joy of computing with python</h3>
-                <p>This is the description for Course 2. Dive deep into this subject and enhance your skills.</p>
-            </div>
-            <div id="c" class="course-details">
-                <h3>problem solving through c</h3>
-                <p>This is the description for Course 3. Explore the fundamentals and practical applications.</p>
-            </div>
-            <div id="iot" class="course-details">
-                <h3>internet of things</h3>
-                <p>This is the description for Course 4. Advance your knowledge with this in-depth course.</p>
+            <div class="pdf-container" id="pdf-container">
+                <h2>NPTEL Answers</h2>
+                <iframe id="pdf-frame" src=""></iframe>
             </div>
         </div>
     </section>
