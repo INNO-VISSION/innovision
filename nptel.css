@@ -1,7 +1,7 @@
 
 .nptel-courses{
     margin-top: 120px;
-    /* background-color: #07c1fa; */
+   
 width: 100%;
  height: 100%;
  display: flex;
@@ -28,17 +28,12 @@ width: 100%;
     margin: 0;
     border-top: 2px solid #07c1fa;
 }
-.sidebar ul li{
-
-}
 .sidebar ul a{
     text-decoration: none;
     color: rgb(0, 16, 24);
     width: 50vh;
     padding: 8px;
     margin: 8px;
-    /* background-color: #07c1fa; */
-   
     text-align: center;
     border-radius: 5px;
     align-items: center;
