@@ -2,8 +2,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
 
-    menuToggle.addEventListener('click', () => {
+    menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation(); // Prevent click event from bubbling up
         menu.classList.toggle('active');
+        if (menu.classList.contains('active')) {
+            document.body.style.overflow = 'hidden'; // Disable scrolling
+        } else {
+            document.body.style.overflow = ''; // Enable scrolling
+        }
+    });
+
+    // Close the menu when clicking anywhere outside of it
+    document.addEventListener('click', () => {
+        if (menu.classList.contains('active')) {
+            menu.classList.remove('active');
+            document.body.style.overflow = ''; // Enable scrolling
+        }
+    });
+
+    // Prevent menu from closing when clicking inside it
+    menu.addEventListener('click', (e) => {
+        e.stopPropagation();
     });
 });
 
@@ -36,12 +55,12 @@ const keywords = [
     { keyword: "nptel", url: "nptel.html" },
     { keyword: "python", url: "python.html" },
     { keyword: "java", url: "java.html" },
-    { keyword: "powerBI", url: "powerbi.html" },
-    { keyword: "Web Development", url: "web.html" },
+    { keyword: "powerbi", url: "powerbi.html" },
+    { keyword: "web development", url: "web.html" },
     { keyword: "sql", url: "sql.html" },
-    { keyword: "Frontend Development", url: "frontend-development.html" },
-    { keyword: "Backend Solutions", url: "backend-solutions.html" },
-];
+    { keyword: "frontend development", url: "frontend-development.html" },
+    { keyword: "backend solutions", url: "backend-solutions.html" },
+].map(item => ({ keyword: item.keyword.toLowerCase(), url: item.url }));
 
 // Toggle search bar visibility (for mobile)
 searchIcon.addEventListener('click', function () {
@@ -82,6 +101,24 @@ searchInput.addEventListener('input', function () {
 
 // Perform the search on button click
 searchButton.addEventListener('click', function () {
+    performSearch();
+});
+
+// Perform the search on Enter key press
+searchInput.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+        performSearch();
+    }
+});
+
+// Hide suggestions if the input is cleared
+searchInput.addEventListener('input', function () {
+    if (this.value === '') {
+        suggestionsList.style.display = 'none';
+    }
+});
+
+function performSearch() {
     const searchTerm = searchInput.value.toLowerCase();
     const matchedKeyword = keywords.find(item =>
         item.keyword.toLowerCase() === searchTerm
@@ -95,19 +132,12 @@ searchButton.addEventListener('click', function () {
 
     // Hide suggestions after performing a search
     suggestionsList.style.display = 'none';
-});
-
-// Hide suggestions if the input is cleared
-searchInput.addEventListener('input', function () {
-    if (this.value === '') {
-        suggestionsList.style.display = 'none';
-    }
-});
+}
 
 //nptel script
 const courseWeeks = {
     iot: [
-        { week: 0, pdf: 'https://ontime-uptime.notion.site/Prompt-for-Resume-158714fa91b98049bddce40faacb204b' },
+        { week: 0, pdf: 'https://www.notion.so/ontime-uptime/History-355122435fa540399ea4ed10027b373b?pvs=4' },
         // { week: 1, pdf: 'iot_week1.pdf' },
         // { week: 2, pdf: 'iot_week2.pdf' },
         // { week: 3, pdf: 'iot_week3.pdf' },
