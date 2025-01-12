@@ -48,7 +48,6 @@
                 </div>
 
             </div>
-            
 
             <div class="social-icons"></div>
             <div class="menu-toggle" id="menu-toggle">
@@ -69,7 +68,40 @@
     </header>
     <section id="home" class="home">
         <div class="home-content">
-            <img src="images/img1.jpg" alt="home">
+            <div class="slider">
+                <div class="slides">
+                    <img src="images/img1.jpg" alt="home">
+                    <img src="images/img2.jpg" alt="home">
+                    <img src="images/img3.jpg" alt="home">
+                </div>
+            </div>
+            <script>
+                let currentIndex = 0;
+                let direction = 1;
+
+                function showNextSlide() {
+                    const slides = document.querySelector('.slides');
+                    const totalSlides = slides.children.length;
+                    currentIndex += direction;
+
+                    if (currentIndex >= totalSlides) {
+                        direction = -1;
+                        currentIndex = totalSlides - 2;
+                    } else if (currentIndex < 0) {
+                        direction = 1;
+                        currentIndex = 1;
+                    }
+
+                    const offset = -currentIndex * 100;
+                    slides.style.transform = `translateX(${offset}%)`;
+                }
+
+                function startSlider() {
+                    setInterval(showNextSlide, 2000); 
+                }
+
+                window.onload = startSlider;
+            </script>
             <div class="home-text">
                 <h1>What Is <span>InnoVision</span></h1>
                 <p>InnoVision provides all educational related content and courses through online platforms. Our mission

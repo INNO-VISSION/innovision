@@ -24,6 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
     menu.addEventListener('click', (e) => {
         e.stopPropagation();
     });
+
+    // Close the menu when navigating to a new page
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                document.body.style.overflow = ''; // Enable scrolling
+            }
+        });
+    });
 });
 
 //toggle weeks
@@ -43,7 +53,7 @@ document.querySelectorAll('.toggle-weeks').forEach(button => {
     });
 });
 
-// Selecting elements
+// Search bar functionality
 const searchIcon = document.getElementById('search-icon');
 const searchBar = document.getElementById('search-bar');
 const suggestionsList = document.getElementById('suggestions-list');
@@ -134,10 +144,17 @@ function performSearch() {
     suggestionsList.style.display = 'none';
 }
 
+// Hide search bar when clicking outside of it
+document.addEventListener('click', function (e) {
+    if (!searchBar.contains(e.target) && !searchIcon.contains(e.target)) {
+        searchBar.classList.remove('active');
+    }
+});
+
 //nptel script
 const courseWeeks = {
     iot: [
-        { week: 0, pdf: 'https://www.notion.so/ontime-uptime/History-355122435fa540399ea4ed10027b373b?pvs=4' },
+        { week: 0,pdf: 'py_week0.html' },
         // { week: 1, pdf: 'iot_week1.pdf' },
         // { week: 2, pdf: 'iot_week2.pdf' },
         // { week: 3, pdf: 'iot_week3.pdf' },
@@ -151,7 +168,7 @@ const courseWeeks = {
         // { week: 11, pdf: 'iot_week11.pdf' },
     ],
     java: [
-        { week: 0, pdf: '' },
+        { week: 0, pdf: 'py_week0.html' },
         // { week: 1, pdf: 'python pdf\week1.PDF' },
         // { week: 2, pdf: 'java_week2.pdf' },
         // { week: 3, pdf: 'java_week3.pdf' },
@@ -220,6 +237,48 @@ const courseWeeks = {
         // { week: 9, pdf: 'sql_week9.pdf' },
         // { week: 10, pdf: 'sql_week10.pdf' },
         // { week: 11, pdf: 'sql_week11.pdf' },
+    ],
+    c_pro: [
+        { week: 0, pdf: 'c_pro.pdf' },
+        // { week: 1, pdf: 'sql_week1.pdf' },
+        // { week: 2, pdf: 'sql_week2.pdf' },
+        // { week: 3, pdf: 'sql_week3.pdf' },
+        // { week: 4, pdf: 'sql_week4.pdf' },
+        // { week: 5, pdf: 'sql_week5.pdf' },
+        // { week: 6, pdf: 'sql_week6.pdf' },
+        // { week: 7, pdf: 'sql_week7.pdf' },
+        // { week: 8, pdf: 'sql_week8.pdf' },
+        // { week: 9, pdf: 'sql_week9.pdf' },
+        // { week: 10, pdf: 'sql_week10.pdf' },
+        // { week: 11, pdf: 'sql_week11.pdf' },
+    ],
+    java_pro: [
+        { week: 0, pdf: 'java_pro.pdf' },
+        // { week: 1, pdf: 'sql_week1.pdf' },
+        // { week: 2, pdf: 'sql_week2.pdf' },
+        // { week: 3, pdf: 'sql_week3.pdf' },
+        // { week: 4, pdf: 'sql_week4.pdf' },
+        // { week: 5, pdf: 'sql_week5.pdf' },
+        // { week: 6, pdf: 'sql_week6.pdf' },
+        // { week: 7, pdf: 'sql_week7.pdf' },
+        // { week: 8, pdf: 'sql_week8.pdf' },
+        // { week: 9, pdf: 'sql_week9.pdf' },
+        // { week: 10, pdf: 'sql_week10.pdf' },
+        // { week: 11, pdf: 'sql_week11.pdf' },
+    ],
+    python_pro: [
+        { week: 0, pdf: 'python_pro.pdf' },
+        // { week: 1, pdf: 'sql_week1.pdf' },
+        // { week: 2, pdf: 'sql_week2.pdf' },
+        // { week: 3, pdf: 'sql_week3.pdf' },
+        // { week: 4, pdf: 'sql_week4.pdf' },
+        // { week: 5, pdf: 'sql_week5.pdf' },
+        // { week: 6, pdf: 'sql_week6.pdf' },
+        // { week: 7, pdf: 'sql_week7.pdf' },
+        // { week: 8, pdf: 'sql_week8.pdf' },
+        // { week: 9, pdf: 'sql_week9.pdf' },
+        // { week: 10, pdf: 'sql_week10.pdf' },
+        // { week: 11, pdf: 'sql_week11.pdf' },
     ]
 };
 
@@ -259,8 +318,8 @@ courseLinks.forEach(link => {
 weekListUl.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
         e.preventDefault();
-        const pdf = e.target.getAttribute('data-pdf');
-        pdfFrame.src = pdf; // Load the selected PDF
+        const link = e.target.getAttribute('data-pdf');
+        pdfFrame.src = link; // Load the selected PDF
         pdfContainer.style.display = 'block';
     }
 });
