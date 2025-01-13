@@ -150,6 +150,14 @@ document.addEventListener('click', function (e) {
         searchBar.classList.remove('active');
     }
 });
+// Perform the search on Enter key press in the search input
+if (window.innerWidth <= 768) { // Check if the viewport width is 768px or less (mobile view)
+    searchInput.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+            performSearch();
+        }
+    });
+}
 
 //nptel script
 const courseWeeks = {
@@ -300,44 +308,44 @@ const courseWeeks = {
 };
 
 const courseLinks = document.querySelectorAll('.sidebar a');
-const weekList = document.getElementById('week-list');
-const weekListUl = weekList.querySelector('ul');
+const weekListUl = document.querySelector('#week-list ul');
 const pdfContainer = document.getElementById('pdf-container');
 const pdfFrame = document.getElementById('pdf-frame');
 
-// Display week list dynamically based on the selected course
+// Function to populate week list
+function populateWeekList(course) {
+    const weeks = courseWeeks[course];
+    weekListUl.innerHTML = ''; // Clear previous weeks
+
+    weeks.forEach(({ week, pdf }) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#';
+        a.textContent = `Week ${week}`;
+        a.setAttribute('data-pdf', pdf);
+        li.appendChild(a);
+        weekListUl.appendChild(li);
+    });
+
+    document.getElementById('week-list').style.display = 'block';
+    pdfContainer.style.display = 'none';
+    weekListUl.style.maxHeight = '400px'; // Adjust the height as needed
+    weekListUl.style.overflowY = 'auto';
+}
+
+// Event listener for course links
 courseLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        const course = link.getAttribute('data-course');
-        const weeks = courseWeeks[course];
-
-        // Clear previous weeks
-        weekListUl.innerHTML = '';
-
-        // Populate new weeks
-        weeks.forEach(({ week, pdf }) => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
-            a.href = '#';
-            a.textContent = `Week ${week}`;
-            a.setAttribute('data-pdf', pdf);
-            li.appendChild(a);
-            weekListUl.appendChild(li);
-        });
-
-        weekList.style.display = 'block';
-        pdfContainer.style.display = 'none';
+        populateWeekList(link.getAttribute('data-course'));
     });
 });
 
-// Load the selected week's PDF
+// Event listener for week list
 weekListUl.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
         e.preventDefault();
-        const link = e.target.getAttribute('data-pdf');
-        pdfFrame.src = link;
-        pdfFrame.style.display = 'block'; // Ensure the PDF frame is visible
+        pdfFrame.src = e.target.getAttribute('data-pdf');
         pdfContainer.style.display = 'block';
     }
 });
