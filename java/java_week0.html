@@ -34,7 +34,15 @@
                 max-width: 100%;
                 box-shadow: none;
                 border: none;
-                max-width: 100px; /* Reduce size for mobile view */
+                max-width: 300px; /* Reduce size for mobile view */
+            }
+        }
+        @media (max-width: 480px) {
+            #pdf-viewer {
+                padding: 5px;
+                max-width: 100%;
+                box-shadow: none;
+                border: none;
             }
         }
     </style>
@@ -43,7 +51,7 @@
     <div id="pdf-viewer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     <script>
-        const url = 'python/Programming_in_Java week8.pdf'; // Replace with the actual path to your PDF
+        const url = '../java/week0.pdf'; // Replace with the actual path to your PDF
 
         const pdfjsLib = window['pdfjs-dist/build/pdf'];
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
@@ -53,31 +61,19 @@
             const viewer = document.getElementById('pdf-viewer');
             viewer.style.position = 'relative'; // For additional customization
 
+            let scale = 1.5; // Initial scale
+
             function renderPage(pageNum) {
                 pdf.getPage(pageNum).then(function(page) {
-                    const viewport = page.getViewport({ scale: 1.5 }); // Adjust scale for better quality
+                    const viewport = page.getViewport({ scale: scale }); // Adjust scale for better quality
+                    const canvas = document.createElement('canvas');
                     const context = canvas.getContext('2d');
                     canvas.height = viewport.height;
                     canvas.width = viewport.width;
 
-                    // Render the page
                     page.render({ canvasContext: context, viewport: viewport }).promise.then(function() {
                         viewer.appendChild(canvas);
                         adjustCanvasSize(canvas);
-
-                        // Render text layer
-                        const textLayerDiv = document.createElement('div');
-                        textLayerDiv.className = 'textLayer';
-                        viewer.appendChild(textLayerDiv);
-
-                        page.getTextContent().then(function(textContent) {
-                            pdfjsLib.renderTextLayer({
-                                textContent: textContent,
-                                container: textLayerDiv,
-                                viewport: viewport,
-                                textDivs: []
-                            });
-                        });
                     });
                 });
             }
@@ -89,6 +85,9 @@
                 canvas.style.height = (canvas.height * scale) + 'px';
             }
 
+            // Clear the viewer before rendering pages
+            viewer.innerHTML = '';
+
             for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
                 renderPage(pageNum);
             }
@@ -97,6 +96,14 @@
                 const canvases = viewer.getElementsByTagName('canvas');
                 for (let canvas of canvases) {
                     adjustCanvasSize(canvas);
+                }
+            });
+
+            viewer.addEventListener('click', function() {
+                scale = scale === 1.5 ? 2.0 : 1.5; // Toggle between two scales
+                viewer.innerHTML = ''; // Clear the viewer
+                for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                    renderPage(pageNum);
                 }
             });
         }).catch(function(error) {
