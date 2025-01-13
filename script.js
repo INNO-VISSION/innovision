@@ -154,7 +154,7 @@ document.addEventListener('click', function (e) {
 //nptel script
 const courseWeeks = {
     iot: [
-        { week: 0,pdf: 'py_week0.html' },
+        { week: 0,pdf: 'pdf.html' },
         // { week: 1, pdf: 'iot_week1.pdf' },
         // { week: 2, pdf: 'iot_week2.pdf' },
         // { week: 3, pdf: 'iot_week3.pdf' },

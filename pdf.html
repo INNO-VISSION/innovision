@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PDF Viewer</title>
+    <!-- <title>PDF Viewer</title> -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,7 +51,7 @@
     <div id="pdf-viewer"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     <script>
-        const url = 'pdf/Naukri_SavitriPatted[0y_0m].pdf.pdf'; // Replace with the actual path to your PDF
+        const url = 'python/Programming_in_Java week8.pdf'; // Replace with the actual path to your PDF
 
         const pdfjsLib = window['pdfjs-dist/build/pdf'];
         pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
@@ -61,7 +61,7 @@
             const viewer = document.getElementById('pdf-viewer');
             viewer.style.position = 'relative'; // For additional customization
 
-            for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+            function renderPage(pageNum) {
                 pdf.getPage(pageNum).then(function(page) {
                     const viewport = page.getViewport({ scale: 1.5 }); // Adjust scale for better quality
                     const canvas = document.createElement('canvas');
@@ -72,9 +72,42 @@
                     // Render the page
                     page.render({ canvasContext: context, viewport: viewport }).promise.then(function() {
                         viewer.appendChild(canvas);
+                        adjustCanvasSize(canvas);
+
+                        // Render text layer
+                        const textLayerDiv = document.createElement('div');
+                        textLayerDiv.className = 'textLayer';
+                        viewer.appendChild(textLayerDiv);
+
+                        page.getTextContent().then(function(textContent) {
+                            pdfjsLib.renderTextLayer({
+                                textContent: textContent,
+                                container: textLayerDiv,
+                                viewport: viewport,
+                                textDivs: []
+                            });
+                        });
                     });
                 });
             }
+
+            function adjustCanvasSize(canvas) {
+                const containerWidth = viewer.clientWidth;
+                const scale = containerWidth / canvas.width;
+                canvas.style.width = containerWidth + 'px';
+                canvas.style.height = (canvas.height * scale) + 'px';
+            }
+
+            for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                renderPage(pageNum);
+            }
+
+            window.addEventListener('resize', function() {
+                const canvases = viewer.getElementsByTagName('canvas');
+                for (let canvas of canvases) {
+                    adjustCanvasSize(canvas);
+                }
+            });
         }).catch(function(error) {
             console.error('Error loading PDF:', error);
         });
