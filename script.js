@@ -154,7 +154,7 @@ document.addEventListener('click', function (e) {
 //nptel script
 const courseWeeks = {
     iot: [
-        { week: 0,pdf: 'pdf.html' },
+        { week: 0, pdf: 'pdf/iot_week0.html' },
         // { week: 1, pdf: 'iot_week1.pdf' },
         // { week: 2, pdf: 'iot_week2.pdf' },
         // { week: 3, pdf: 'iot_week3.pdf' },
@@ -319,7 +319,8 @@ weekListUl.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
         e.preventDefault();
         const link = e.target.getAttribute('data-pdf');
-        pdfFrame.src = link; // Load the selected PDF
+        pdfFrame.src = link;
+        pdfFrame.style.display = 'block'; // Ensure the PDF frame is visible
         pdfContainer.style.display = 'block';
     }
 });

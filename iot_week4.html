@@ -37,14 +37,6 @@
                 max-width: 100px; /* Reduce size for mobile view */
             }
         }
-        @media (max-width: 480px) {
-            #pdf-viewer {
-                padding: 5px;
-                max-width: 100%;
-                box-shadow: none;
-                border: none;
-            }
-        }
     </style>
 </head>
 <body>
@@ -64,7 +56,6 @@
             function renderPage(pageNum) {
                 pdf.getPage(pageNum).then(function(page) {
                     const viewport = page.getViewport({ scale: 1.5 }); // Adjust scale for better quality
-                    const canvas = document.createElement('canvas');
                     const context = canvas.getContext('2d');
                     canvas.height = viewport.height;
                     canvas.width = viewport.width;
@@ -73,6 +64,20 @@
                     page.render({ canvasContext: context, viewport: viewport }).promise.then(function() {
                         viewer.appendChild(canvas);
                         adjustCanvasSize(canvas);
+
+                        // Render text layer
+                        const textLayerDiv = document.createElement('div');
+                        textLayerDiv.className = 'textLayer';
+                        viewer.appendChild(textLayerDiv);
+
+                        page.getTextContent().then(function(textContent) {
+                            pdfjsLib.renderTextLayer({
+                                textContent: textContent,
+                                container: textLayerDiv,
+                                viewport: viewport,
+                                textDivs: []
+                            });
+                        });
                     });
                 });
             }

@@ -228,3 +228,43 @@ width: 100%;
         margin-right: 100px ;
     }
 }
+/* For screens between 600px and 1580px */
+@media (min-width: 601px) and (max-width: 850px) {
+    .nptel-courses {
+        text-align: center;
+        flex-direction: column;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .sidebar ul a {
+        width: 30vh;
+    }
+    .content {
+        width: 100%;
+        padding: 15px;
+    }
+    .week-list, .pdf-container {
+        display: none;
+    }
+    .pdf-container iframe {
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+    
+}
+@media (min-width: 301px) and (max-width: 599px) {
+    .sidebar ul a {
+        width: 20vh;
+    }
+}
