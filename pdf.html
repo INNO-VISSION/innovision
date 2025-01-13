@@ -75,6 +75,24 @@
                         adjustCanvasSize(canvas);
 
                         // Render text layer
+
+            function adjustCanvasSize(canvas) {
+                const containerWidth = viewer.clientWidth;
+                const scale = containerWidth / canvas.width;
+                canvas.style.width = containerWidth + 'px';
+                canvas.style.height = (canvas.height * scale) + 'px';
+            }
+
+            for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+                renderPage(pageNum);
+            }
+
+            window.addEventListener('resize', function() {
+                const canvases = viewer.getElementsByTagName('canvas');
+                for (let canvas of canvases) {
+                    adjustCanvasSize(canvas);
+                }
+            });
                         const textLayerDiv = document.createElement('div');
                         textLayerDiv.className = 'textLayer';
                         viewer.appendChild(textLayerDiv);
