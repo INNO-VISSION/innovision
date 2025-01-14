@@ -1,4 +1,6 @@
-
+body {
+    display: block;
+}
 .nptel-courses{
     margin-top: 120px;
    
@@ -31,7 +33,7 @@ width: 100%;
 .sidebar ul a{
     text-decoration: none;
     color: rgb(0, 16, 24);
-    width: 50vh;
+    width: 70vh;
     padding: 8px;
     margin: 8px;
     text-align: center;
@@ -42,10 +44,15 @@ width: 100%;
     justify-content: center;
     cursor: pointer;
     border: 1px solid #000000;
+    box-sizing: border-box;
+    overflow: hidden;
+    
 }
-.sidebar ul a:hover{
+.sidebar ul a:hover {
     background-color: #0f7c9e;
     transform: scale(1.1);
+    overflow: visible;
+    white-space: normal;
 }
 
 .content {
@@ -159,6 +166,8 @@ width: 100%;
         font-size: .9em;
         width: 30vh;
         padding: 8px;
+        text-overflow: ellipsis;
+    white-space: nowrap;
     }
     .content {
         width: 100%;
@@ -212,6 +221,8 @@ width: 100%;
     }
     .sidebar ul a {
         width: 50vh;
+        text-overflow: ellipsis;
+    white-space: nowrap;
     }
     .content {
         width: 100%;
@@ -230,15 +241,6 @@ width: 100%;
 }
 /* For screens between 600px and 1580px */
 @media (min-width: 601px) and (max-width: 850px) {
-    .nptel-courses {
-        text-align: center;
-        flex-direction: column;
-        margin-top: 120px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        margin-bottom: 20px;
-    }
     .sidebar {
         width: 100%;
         margin-right: 0;
@@ -246,13 +248,12 @@ width: 100%;
     }
     .sidebar ul a {
         width: 30vh;
+        text-overflow: ellipsis;
+    white-space: nowrap;
     }
     .content {
         width: 100%;
         padding: 15px;
-    }
-    .week-list, .pdf-container {
-        display: none;
     }
     .pdf-container iframe {
         height: 800px;
@@ -263,8 +264,101 @@ width: 100%;
     }
     
 }
+@media (min-width: 530px) and (max-width: 599px) {
+    .sidebar ul a {
+        width: 30vh;
+        text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    .sidebar .programming_assignment {
+        flex-direction: column;
+    }
+    .nptel-courses {
+        flex-direction: column;
+    }
+}
 @media (min-width: 301px) and (max-width: 599px) {
     .sidebar ul a {
         width: 20vh;
+    }
+}
+/* Desktop view */
+@media (min-width: 1025px) {
+    .nptel-courses {
+        text-align: center;
+        flex-direction: row;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .sidebar {
+        width: 70vh;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .sidebar ul a {
+        width: 30vh;
+        text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    .content {
+        width: 80%;
+        padding: 20px;
+    }
+    .week-list, .pdf-container {
+        display: none;
+    }
+    .pdf-container iframe {
+        height: 1000px;
+    }
+}
+/* For screens between 1025px and 1580px */
+@media (min-width: 1025px) and (max-width: 1580px) {
+    .sidebar {
+        width: 70vh;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .sidebar ul a {
+        width: 30vh;
+        text-overflow: ellipsis;
+    white-space: nowrap;
+    }
+    .content {
+        width: 80%;
+        padding: 20px;
+    }
+    .pdf-container iframe {
+        height: 1000px;
+    }
+}
+
+/* For screens greater than 1580px */
+@media (min-width: 1581px) {
+    .nptel-courses {
+        text-align: center;
+        flex-direction: row;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .sidebar {
+        width: 70vh;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .sidebar ul a {
+        width: 30vh;
+    }
+    .content {
+        width: 80%;
+        padding: 20px;
+    }
+    .pdf-container iframe {
+        height: 1000px;
     }
 }
