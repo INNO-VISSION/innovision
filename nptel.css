@@ -362,3 +362,29 @@ width: 100%;
         height: 1000px;
     }
 }
+/* Mobile desktop view */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .nptel-courses {
+        flex-direction: column;
+        margin-top: 120px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sidebar ul a {
+        width: 30vh;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .content {
+        width: 100%;
+        padding: 15px;
+    }
+    .pdf-container iframe {
+        height: 800px;
+    }
+}
