@@ -178,7 +178,7 @@ const courseWeeks = {
     ],
     java: [
         { week: 0, pdf: 'java/java_week0.html' },
-    // { week: 1, pdf: 'java/java_week1.html' },
+    { week: 1, pdf: 'https://inno-vission.github.io/nptel/' },
     // { week: 2, pdf: 'java/java_week2.html' },
     // { week: 3, pdf: 'java/java_week3.html' },
     // { week: 4, pdf: 'java/java_week4.html' },
@@ -277,8 +277,8 @@ const courseWeeks = {
         // { week: 11, pdf: 'sql_week11.pdf' },
     ],
     java_pro: [
-        // { week: 0, pdf: '' },
-        { week: 1, pdf: 'https://inno-vission.github.io/nptel/' },
+        { week: 0, pdf: '' },
+        // { week: 1, pdf: 'sql_week1.pdf' },
         // { week: 2, pdf: 'sql_week2.pdf' },
         // { week: 3, pdf: 'sql_week3.pdf' },
         // { week: 4, pdf: 'sql_week4.pdf' },
