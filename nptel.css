@@ -1,36 +1,42 @@
 body {
     display: block;
 }
-.nptel-courses{
+/* .search {
+    display: none;
+} */
+.nptel-courses {
     margin-top: 120px;
-   
-width: 100%;
- height: 100%;
- display: flex;
- border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 5px;
 }
-.sidebar{
+
+.sidebar {
     text-align: center;
     width: 70vh;
     background-color: aliceblue;
     justify-content: center;
     align-items: center;
     display: inline-block;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 5px;
     flex-direction: column;
     margin-right: 10px;
 }
-.sidebar h1{
-    margin:10px;
+
+.sidebar h1 {
+    margin: 10px;
 }
-.sidebar ul{
+
+.sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
     border-top: 2px solid #07c1fa;
 }
-.sidebar ul a{
+
+.sidebar ul a {
     text-decoration: none;
     color: rgb(0, 16, 24);
     width: 70vh;
@@ -46,8 +52,8 @@ width: 100%;
     border: 1px solid #000000;
     box-sizing: border-box;
     overflow: hidden;
-    
 }
+
 .sidebar ul a:hover {
     background-color: #0f7c9e;
     transform: scale(1.1);
@@ -65,7 +71,6 @@ width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  
 }
 
 .week-list {
@@ -110,7 +115,6 @@ width: 100%;
 
 .pdf-container {
     width: 100%;
-    /* height: 100%; */
     background-color: #ffffff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -119,30 +123,34 @@ width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    }
-
-    .pdf-container h2 {
-        font-size: 18px;
-        margin-bottom: 10px;
-        text-align: center;
-        color: #333;
-    }
-.programming_assignment h2{
-    margin:10px;
 }
-    .pdf-container iframe {
-        width: 100%;
-        height: 1000px;
-        border: none;
-        border-radius: 8px;
-        margin: 30px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+
+.pdf-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.programming_assignment h2 {
+    margin: 10px;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 1000px;
+    border: none;
+    border-radius: 8px;
+    margin: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .week-list, .pdf-container {
     display: none;
 }
+
 /* Mobile view */
 @media (max-width: 600px) {
     .nptel-courses {
@@ -156,7 +164,6 @@ width: 100%;
     }
     .sidebar {
         align-items: center;
-        /* display: flex; */
         justify-content: center;
         width: 100%;
         margin-right: 0;
@@ -167,7 +174,7 @@ width: 100%;
         width: 30vh;
         padding: 8px;
         text-overflow: ellipsis;
-    white-space: nowrap;
+        white-space: nowrap;
     }
     .content {
         width: 100%;
@@ -179,30 +186,9 @@ width: 100%;
     }
     .pdf-container iframe {
         height: 500px;
-    }
-
-    .sidebar ul a {
-        font-size: .9em;
-        width: 100%;
-        width: 30vh;
-        padding: 8px;
-
-    }
-    .content {
-        width: 100%;
-        padding: 10px;
-    }
-    .week-list, .pdf-container {
-        width: 100%;
-        padding: 10px;
-    }
-    .pdf-container iframe {
-        height: 500px;
-    }
-    .week-list, .pdf-container {
-        display: none;
     }
 }
+
 /* Tablet view */
 @media (min-width: 601px) and (max-width: 1024px) {
     .nptel-courses {
@@ -222,34 +208,7 @@ width: 100%;
     .sidebar ul a {
         width: 50vh;
         text-overflow: ellipsis;
-    white-space: nowrap;
-    }
-    .content {
-        width: 100%;
-        padding: 15px;
-    }
-    .week-list, .pdf-container {
-        display: none;
-    }
-    .pdf-container iframe {
-        height: 800px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-        margin-right: 100px ;
-    }
-}
-/* For screens between 600px and 1580px */
-@media (min-width: 601px) and (max-width: 850px) {
-    .sidebar {
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    .sidebar ul a {
-        width: 30vh;
-        text-overflow: ellipsis;
-    white-space: nowrap;
+        white-space: nowrap;
     }
     .content {
         width: 100%;
@@ -262,13 +221,38 @@ width: 100%;
         align-items: center;
         margin-right: 100px;
     }
-    
 }
+
+/* For screens between 600px and 850px */
+@media (min-width: 601px) and (max-width: 850px) {
+    .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .sidebar ul a {
+        width: 30vh;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .content {
+        width: 100%;
+        padding: 15px;
+    }
+    .pdf-container iframe {
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+}
+
 @media (min-width: 530px) and (max-width: 599px) {
     .sidebar ul a {
         width: 30vh;
         text-overflow: ellipsis;
-    white-space: nowrap;
+        white-space: nowrap;
     }
     .sidebar .programming_assignment {
         flex-direction: column;
@@ -277,9 +261,116 @@ width: 100%;
         flex-direction: column;
     }
 }
+
 @media (min-width: 301px) and (max-width: 599px) {
     .sidebar ul a {
         width: 20vh;
+    }
+}
+
+/* Desktop view */
+@media (min-width: 1025px) {
+    .nptel-courses {
+        text-align: center;
+        flex-direction: row;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .sidebar {
+        width: 70vh;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .sidebar ul a {
+        width: 30vh;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .content {
+        width: 80%;
+        padding: 20px;
+    }
+    .pdf-container iframe {
+        height: 1000px;
+    }
+}
+
+/* For screens between 1025px and 1580px */
+@media (min-width: 1025px) and (max-width: 1580px) {
+    .sidebar {
+        width: 70vh;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .sidebar ul a {
+        width: 30vh;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .content {
+        width: 80%;
+        padding: 20px;
+    }
+    .pdf-container iframe {
+        height: 1000px;
+    }
+}
+
+/* For screens greater than 1580px */
+@media (min-width: 1581px) {
+    .nptel-courses {
+        text-align: center;
+        flex-direction: row;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .sidebar {
+        width: 70vh;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+    .sidebar ul a {
+        width: 30vh;
+    }
+    .content {
+        width: 80%;
+        padding: 20px;
+    }
+    .pdf-container iframe {
+        height: 1000px;
+    }
+}
+
+/* Mobile desktop view */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .nptel-courses {
+        flex-direction: column;
+        margin-top: 120px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sidebar ul a {
+        width: 30vh;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .content {
+        width: 100%;
+        padding: 15px;
+    }
+    .pdf-container iframe {
+        height: 800px;
     }
 }
 /* Desktop view */

@@ -162,7 +162,7 @@ if (window.innerWidth <= 768) { // Check if the viewport width is 768px or less 
 //nptel script
 const courseWeeks = {
     iot: [
-        { week: 0, pdf: 'iot/iot_week0.html' },
+        { week: 0, pdf: 'https://inno-vission.github.io/nptel/' },
     // { week: 1, pdf: 'iot/iot_week1.html' },
     // { week: 2, pdf: 'iot/iot_week2.html' },
     // { week: 3, pdf: 'iot/iot_week3.html' },
@@ -277,8 +277,8 @@ const courseWeeks = {
         // { week: 11, pdf: 'sql_week11.pdf' },
     ],
     java_pro: [
-        { week: 0, pdf: 'java_pro.pdf' },
-        // { week: 1, pdf: 'sql_week1.pdf' },
+        // { week: 0, pdf: '' },
+        { week: 1, pdf: 'https://inno-vission.github.io/nptel/' },
         // { week: 2, pdf: 'sql_week2.pdf' },
         // { week: 3, pdf: 'sql_week3.pdf' },
         // { week: 4, pdf: 'sql_week4.pdf' },
