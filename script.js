@@ -178,7 +178,7 @@ const courseWeeks = {
     ],
     java: [
         { week: 0, pdf: 'java/java_week0.html' },
-    { week: 1, pdf: 'https://inno-vission.github.io/nptel/' },
+    { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//PROGRAMMING%20IN%20JAVA/week%2001/' },
     // { week: 2, pdf: 'java/java_week2.html' },
     // { week: 3, pdf: 'java/java_week3.html' },
     // { week: 4, pdf: 'java/java_week4.html' },
