@@ -160,6 +160,7 @@ if (window.innerWidth <= 768) { // Check if the viewport width is 768px or less 
 }
 
 //nptel script
+
 const courseWeeks = {
     iot: [
         // { week: 0, pdf: 'https://inno-vission.github.io/nptel/' },
@@ -194,8 +195,8 @@ const courseWeeks = {
         
     ],
     python: [
-        { week: 0, pdf: 'python/py_week0.html' },
-    // { week: 1, pdf: 'python/py_week1.html' },
+        // { week: 0, pdf: '' },
+    { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2001/' },
     // { week: 2, pdf: 'python/py_week2.html' },
     // { week: 3, pdf: 'python/py_week3.html' },
     // { week: 4, pdf: 'python/py_week4.html' },
@@ -277,8 +278,8 @@ const courseWeeks = {
         // { week: 11, pdf: 'sql_week11.pdf' },
     ],
     java_pro: [
-        { week: 0, pdf: '' },
-        // { week: 1, pdf: 'sql_week1.pdf' },
+        // { week: 0, pdf: '' },
+        { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/java%20programming%20assignment/week01/' },
         // { week: 2, pdf: 'sql_week2.pdf' },
         // { week: 3, pdf: 'sql_week3.pdf' },
         // { week: 4, pdf: 'sql_week4.pdf' },
