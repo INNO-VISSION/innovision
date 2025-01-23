@@ -209,11 +209,10 @@ const courseWeeks = {
     // { week: 11, pdf: 'python/py_week11.html' },
     // { week: 12, pdf: 'python/py_week12.html' }
 
-    ],
+    ], 
    
     c: [
-        { week: 0, pdf: 'c/c_week0.html' },
-    // { week: 1, pdf: 'c/c_week1.html' },
+        { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2001/' },
     // { week: 2, pdf: 'c/c_week2.html' },
     // { week: 3, pdf: 'c/c_week3.html' },
     // { week: 4, pdf: 'c/c_week4.html' },
@@ -229,7 +228,7 @@ const courseWeeks = {
 
     ],
     oo: [
-        { week: 0, pdf: 'oop/oop_week0.html' },
+        { week: 0, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Fundamental%20of%20Object%20Oriented%20Programming/week%2001/' },
     // { week: 1, pdf: 'oop/oop_week1.html' },
     // { week: 2, pdf: 'oop/oop_week2.html' },
     // { week: 3, pdf: 'oop/oop_week3.html' },
