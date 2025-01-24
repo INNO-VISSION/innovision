@@ -162,6 +162,11 @@ if (window.innerWidth <= 768) { // Check if the viewport width is 768px or less 
 //nptel script
 
 const courseWeeks = {
+    iot1:[
+    { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2001/' },
+    { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2002/' },
+
+    ],
     iot: [
         // { week: 0, pdf: 'https://inno-vission.github.io/nptel/' },
     { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2001/' },
