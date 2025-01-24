@@ -185,7 +185,7 @@ const courseWeeks = {
     java: [
         // { week: 0, pdf: 'java/java_week0.html' },
     { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//PROGRAMMING%20IN%20JAVA/week%2001/' },
-    // { week: 2, pdf: 'java/java_week2.html' },
+    { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2002/' },
     // { week: 3, pdf: 'java/java_week3.html' },
     // { week: 4, pdf: 'java/java_week4.html' },
     // { week: 5, pdf: 'java/java_week5.html' },
@@ -234,7 +234,7 @@ const courseWeeks = {
     ],
     oo: [
         { week: 0, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Fundamental%20of%20Object%20Oriented%20Programming/week%2001/' },
-    // { week: 1, pdf: 'oop/oop_week1.html' },
+    { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Fundamental%20of%20Object%20Oriented%20Programming/week%202/' },
     // { week: 2, pdf: 'oop/oop_week2.html' },
     // { week: 3, pdf: 'oop/oop_week3.html' },
     // { week: 4, pdf: 'oop/oop_week4.html' },
