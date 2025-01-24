@@ -233,8 +233,8 @@ const courseWeeks = {
 
     ],
     oo: [
-        { week: 0, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Fundamental%20of%20Object%20Oriented%20Programming/week%2001/' },
-    { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Fundamental%20of%20Object%20Oriented%20Programming/week%202/' },
+        { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Fundamental%20of%20Object%20Oriented%20Programming/week%2001/' },
+    { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Fundamental%20of%20Object%20Oriented%20Programming/week%202/' },
     // { week: 2, pdf: 'oop/oop_week2.html' },
     // { week: 3, pdf: 'oop/oop_week3.html' },
     // { week: 4, pdf: 'oop/oop_week4.html' },
