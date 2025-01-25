@@ -202,7 +202,7 @@ const courseWeeks = {
     python: [
         // { week: 0, pdf: '' },
     { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2001/' },
-    // { week: 2, pdf: 'python/py_week2.html' },
+    { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%202/' },
     // { week: 3, pdf: 'python/py_week3.html' },
     // { week: 4, pdf: 'python/py_week4.html' },
     // { week: 5, pdf: 'python/py_week5.html' },
@@ -268,8 +268,8 @@ const courseWeeks = {
        
     ],
     python_pro: [
-        { week: 0, pdf: 'python_pro.pdf' },
-        // { week: 1, pdf: 'sql_week1.pdf' },
+        // { week: 0, pdf: 'python_pro.pdf' },
+        { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python/week%2002/' },
         // { week: 2, pdf: 'sql_week2.pdf' },
         // { week: 3, pdf: 'sql_week3.pdf' },
         // { week: 4, pdf: 'sql_week4.pdf' },
