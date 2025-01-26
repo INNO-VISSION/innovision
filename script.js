@@ -269,7 +269,7 @@ const courseWeeks = {
     ],
     python_pro: [
         // { week: 0, pdf: 'python_pro.pdf' },
-        { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python/week%2002/' },
+        { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python/week%2002/' },
         // { week: 2, pdf: 'sql_week2.pdf' },
         // { week: 3, pdf: 'sql_week3.pdf' },
         // { week: 4, pdf: 'sql_week4.pdf' },
