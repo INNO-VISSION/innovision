@@ -317,6 +317,22 @@ const weekListUl = document.querySelector('#week-list ul');
 const pdfContainer = document.getElementById('pdf-container');
 const pdfFrame = document.getElementById('pdf-frame');
 
+// Function to scroll to week list
+function scrollToWeekList() {
+    const weekList = document.getElementById('week-list');
+    const offsetTop = weekList.getBoundingClientRect().top + window.scrollY - 100; // Adjust the offset as needed
+    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+}
+
+// Event listener for course links
+courseLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        populateWeekList(link.getAttribute('data-course'));
+        scrollToWeekList(); // Scroll to week list after populating it
+    });
+});
+
 // Function to populate week list
 function populateWeekList(course) {
     const weeks = courseWeeks[course];
