@@ -162,63 +162,68 @@ if (window.innerWidth <= 768) { // Check if the viewport width is 768px or less 
 //nptel script
 
 const courseWeeks = {
-    iot1:[
-    { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2001/' },
-    { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2002/' },
-
+    iot1: [
+        { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2001/' },
+        { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2002/' },
+        // { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2003/' },
+        // { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2004/' },
+        // { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2005/' },
+        // { week: 6, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2006/' },
+        // { week: 7, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2007/' },
+        // { week: 8, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2008/' },
+        // { week: 9, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2009/' },
+        // { week: 10, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2010/' },
+        // { week: 11, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2011/' },
+        // { week: 12, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2012/' }
     ],
     iot: [
-        // { week: 0, pdf: 'https://inno-vission.github.io/nptel/' },
-    { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2001/' },
-    // { week: 2, pdf: 'iot/iot_week2.html' },
-    // { week: 3, pdf: 'iot/iot_week3.html' },
-    // { week: 4, pdf: 'iot/iot_week4.html' },
-    // { week: 5, pdf: 'iot/iot_week5.html' },
-    // { week: 6, pdf: 'iot/iot_week6.html' },
-    // { week: 7, pdf: 'iot/iot_week7.html' },
-    // { week: 8, pdf: 'iot/iot_week8.html' },
-    // { week: 9, pdf: 'iot/iot_week9.html' },
-    // { week: 10, pdf: 'iot/iot_week10.html' },
-    // { week: 11, pdf: 'iot/iot_week11.html' },
-    // { week: 12, pdf: 'iot/iot_week12.html' }
+        { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2001/' },
+        { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2002/' },
+        // { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2003/' },
+        // { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2004/' },
+        // { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2005/' },
+        // { week: 6, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2006/' },
+        // { week: 7, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2007/' },
+        // { week: 8, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2008/' },
+        // { week: 9, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2009/' },
+        // { week: 10, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2010/' },
+        // { week: 11, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2011/' },
+        // { week: 12, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2012/' }
     ],
     java: [
         // { week: 0, pdf: 'java/java_week0.html' },
-    { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//PROGRAMMING%20IN%20JAVA/week%2001/' },
-    { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2002/' },
-    // { week: 3, pdf: 'java/java_week3.html' },
-    // { week: 4, pdf: 'java/java_week4.html' },
-    // { week: 5, pdf: 'java/java_week5.html' },
-    // { week: 6, pdf: 'java/java_week6.html' },
-    // { week: 7, pdf: 'java/java_week7.html' },
-    // { week: 8, pdf: 'java/java_week8.html' },
-    // { week: 9, pdf: 'java/java_week9.html' },
-    // { week: 10, pdf: 'java/java_week10.html' },
-    // { week: 11, pdf: 'java/java_week11.html' },
-    // { week: 12, pdf: 'java/java_week12.html' }
-
-        
+        { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//PROGRAMMING%20IN%20JAVA/week%2001/' },
+        { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2002/' },
+        // { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2003/' },
+        // { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2004/' },
+        // { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2005/' },
+        // { week: 6, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2006/' },
+        // { week: 7, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2007/' },
+        // { week: 8, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2008/' },
+        // { week: 9, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2009/' },
+        // { week: 10, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2010/' },
+        // { week: 11, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2011/' },
+        // { week: 12, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2012/' }
     ],
     python: [
-        // { week: 0, pdf: '' },
-    { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2001/' },
-    { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%202/' },
-    // { week: 3, pdf: 'python/py_week3.html' },
-    // { week: 4, pdf: 'python/py_week4.html' },
-    // { week: 5, pdf: 'python/py_week5.html' },
-    // { week: 6, pdf: 'python/py_week6.html' },
-    // { week: 7, pdf: 'python/py_week7.html' },
-    // { week: 8, pdf: 'python/py_week8.html' },
-    // { week: 9, pdf: 'python/py_week9.html' },
-    // { week: 10, pdf: 'python/py_week10.html' },
-    // { week: 11, pdf: 'python/py_week11.html' },
-    // { week: 12, pdf: 'python/py_week12.html' }
+        { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2001/' },
+        { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%202/' },
+        // { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2003/' },
+        // { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2004/' },
+        // { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2005/' },
+        // { week: 6, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2006/' },
+        // { week: 7, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2007/' },
+        // { week: 8, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2008/' },
+        // { week: 9, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2009/' },
+        // { week: 10, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2010/' },
+        // { week: 11, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2011/' },
+        // { week: 12, pdf: 'https://inno-vission.github.io/NPTEL
 
     ], 
    
     c: [
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2001/' },
-    // { week: 2, pdf: 'c/c_week2.html' },
+    { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2002/' },
     // { week: 3, pdf: 'c/c_week3.html' },
     // { week: 4, pdf: 'c/c_week4.html' },
     // { week: 5, pdf: 'c/c_week5.html' },
@@ -249,26 +254,22 @@ const courseWeeks = {
 
     ],
     sql: [
-        // { week: 0, pdf: 'db/sql_week0.html' },
+  
     { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Introduction%20To%20Database/week%2001/' },
-        
-    // { week: 2, pdf: 'db/sql_week2.html' },
-
-    // { week: 3, pdf: 'db/sql_week3.html' },
-    // { week: 4, pdf: 'db/sql_week4.html' },
-    // { week: 5, pdf: 'db/sql_week5.html' },
-    // { week: 6, pdf: 'db/sql_week6.html' },
-    // { week: 7, pdf: 'db/sql_week7.html' },
-    // { week: 8, pdf: 'db/sql_week8.html' },
-    // { week: 9, pdf: 'db/sql_week9.html' },
-    // { week: 10, pdf: 'db/sql_week10.html' },
-    // { week: 11, pdf: 'db/sql_week11.html' },
-    // { week: 12, pdf: 'db/sql_week12.html' }
-
+    { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2002/' },
+    // { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2003/' },
+    // { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2004/' },
+    // { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2005/' },
+    // { week: 6, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2006/' },
+    // { week: 7, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2007/' },
+    // { week: 8, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2008/' },
+    // { week: 9, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2009/' },
+    // { week: 10, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2010/' },
+    // { week: 11, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2011/' },
+    // { week: 12, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2012/' }
        
     ],
     python_pro: [
-        // { week: 0, pdf: 'python_pro.pdf' },
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python/week%2002/' },
         // { week: 2, pdf: 'sql_week2.pdf' },
         // { week: 3, pdf: 'sql_week3.pdf' },
