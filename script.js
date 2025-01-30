@@ -269,6 +269,21 @@ const courseWeeks = {
     // { week: 12, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Database/week%2012/' }
        
     ],
+    sa: [
+        { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Sensors%20and%20Accurators/week%2001/' },
+    { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Sensors%20and%20Accurators/week%2002/' },
+    // { week: 3, pdf: 'sa/sa_week3.html' },
+    // { week: 4, pdf: 'sa/sa_week4.html' },
+    // { week: 5, pdf: 'sa/sa_week5.html' },
+    // { week: 6, pdf: 'sa/sa_week6.html' },
+    // { week: 7, pdf: 'sa/sa_week7.html' },
+    // { week: 8, pdf: 'sa/sa_week8.html' },
+    // { week: 9, pdf: 'sa/sa_week9.html' },
+    // { week: 10, pdf: 'sa/sa_week10.html' },
+    // { week: 11, pdf: 'sa/sa_week11.html' },
+    // { week: 12, pdf: 'sa/sa_week12.html' }
+
+    ],
     python_pro: [
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python/week%2002/' },
         // { week: 2, pdf: 'sql_week2.pdf' },
