@@ -208,7 +208,7 @@ const courseWeeks = {
     python: [
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2001/' },
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%202/' },
-        // { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2003/' },
+        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2003/' },
         // { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2004/' },
         // { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2005/' },
         // { week: 6, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2006/' },
@@ -285,17 +285,8 @@ const courseWeeks = {
 
     ],
     python_pro: [
-        { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python/week%2002/' },
-        // { week: 2, pdf: 'sql_week2.pdf' },
-        // { week: 3, pdf: 'sql_week3.pdf' },
-        // { week: 4, pdf: 'sql_week4.pdf' },
-        // { week: 5, pdf: 'sql_week5.pdf' },
-        // { week: 6, pdf: 'sql_week6.pdf' },
-        // { week: 7, pdf: 'sql_week7.pdf' },
-        // { week: 8, pdf: 'sql_week8.pdf' },
-        // { week: 9, pdf: 'sql_week9.pdf' },
-        // { week: 10, pdf: 'sql_week10.pdf' },
-        // { week: 11, pdf: 'sql_week11.pdf' },
+        { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%2002/' },
+        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%2003/' },
     ],
     java_pro: [
         // { week: 0, pdf: '' },
