@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="team.css">
-    <title>Innovission</title>
+    <title>Blogs</title>
+    <meta name="keywords"
+        content="Innovision, Blog, Technology, Education, Quantum Computing, Blockchain, Artificial Intelligence, AI, Tech Trends, Tech Tips, Tech Insights">
 </head>
 
 <body>
@@ -25,7 +27,7 @@
                 </div>
             </div>
 
-             <!-- <div class="search">
+            <!-- <div class="search">
                 <div action="" id="search-form">
                     <div id="search-bar" class="search-container">
                         <input id="search-input" type="text" name="query" placeholder="Search..." class="search-bar" />
@@ -37,9 +39,9 @@
                 </div>
 
             </div> -->
-            
 
-           
+
+
             <div class="menu-toggle" id="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -77,14 +79,16 @@
                 <div class="course-card">
                     <div class="course-info">
                         <h3>Future of Blockchain</h3>
-                        <p>Discover how blockchain technology is revolutionizing various sectors and what the future holds for this innovative technology.</p>
+                        <p>Discover how blockchain technology is revolutionizing various sectors and what the future
+                            holds for this innovative technology.</p>
                         <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
                 <div class="course-card">
                     <div class="course-info">
                         <h3>Advancements in AI</h3>
-                        <p>Explore the latest advancements in artificial intelligence and their impact on various industries.</p>
+                        <p>Explore the latest advancements in artificial intelligence and their impact on various
+                            industries.</p>
                         <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
@@ -92,7 +96,7 @@
         </div>
         <a href="blog.html" class="explore-more">Explore More Blogs</a>
     </section>
-    
+
     <style>
         #blog {
             opacity: 0;
@@ -100,23 +104,23 @@
             transition: opacity 1s ease, transform 1s ease;
             margin-top: 100px;
         }
-    
+
         #blog.revealed {
             opacity: 1;
             transform: translateY(0);
         }
-    
+
         #blog .explore-more {
             display: none;
         }
     </style>
-    
+
     <script>
         function isInViewport(element) {
             const rect = element.getBoundingClientRect();
             return rect.top < window.innerHeight && rect.bottom > 0;
         }
-    
+
         function revealOnScroll() {
             const revealSection = document.querySelector('#blog');
             if (isInViewport(revealSection)) {
@@ -124,11 +128,11 @@
                 window.removeEventListener('scroll', revealOnScroll);  // Optimization
             }
         }
-    
+
         window.addEventListener('scroll', revealOnScroll);
         revealOnScroll();  // Run once on load
     </script>
-    
+
     <!-- Footer -->
     <footer>
         <div class="footer-container">
@@ -180,9 +184,11 @@
                 <button onclick="subscribe()">Send</button> -->
                 <div class="social-icons">
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/innovisio.n/profilecard/?igsh=OHoxZXdsb245bnpp" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/innovisio.n/profilecard/?igsh=OHoxZXdsb245bnpp"
+                        class="social-icon"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://youtube.com/@innovisio.n?si=uZ9aN5GxDTiatZxy" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    <a href="https://youtube.com/@innovisio.n?si=uZ9aN5GxDTiatZxy" class="social-icon"><i
+                            class="fab fa-youtube"></i></a>
                 </div>
                 <select class="language-select">
                     <option>Select Language</option>
@@ -193,9 +199,9 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&COPY;2024 All rights reserved.</p>
+            <p>&COPY;<script>document.write(new Date().getFullYear());</script> All rights reserved.</p>
             <p class="company-name"><span>Inno</span>Vission</p>
         </div>
     </footer>
     <script src="script.js"></script>
-    </body>
+</body>
