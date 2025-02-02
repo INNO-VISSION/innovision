@@ -272,7 +272,7 @@ const courseWeeks = {
     sa: [
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Sensors%20and%20Accurators/week%2001/' },
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Sensors%20and%20Accurators/week%2002/' },
-        // { week: 3, pdf: 'sa/sa_week3.html' },
+        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Sensors%20and%20Accurators/week%2003/' },
         // { week: 4, pdf: 'sa/sa_week4.html' },
         // { week: 5, pdf: 'sa/sa_week5.html' },
         // { week: 6, pdf: 'sa/sa_week6.html' },
