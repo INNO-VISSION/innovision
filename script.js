@@ -220,7 +220,7 @@ const courseWeeks = {
         { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/java%20programming%20assignment/week%2003/' }
     ],
     c_pro: [
-        { week: 1, pdf: 'sql_week1.pdf' }
+        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Using%20C%20Programming%20%20Assignment/week%2003/' }
     ]
 };
 
