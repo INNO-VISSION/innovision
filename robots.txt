@@ -1,0 +1,16 @@
+User-agent: *
+
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /user-data/
+
+Allow: /public/
+Allow: /blog/
+Allow: /about/
+Allow: /contact/
+
+Sitemap: https://innovission.in/sitemap.xml
