@@ -12,5 +12,6 @@ Allow: /public/
 Allow: /blog/
 Allow: /about/
 Allow: /contact/
+Allow:/nptel/
 
 Sitemap: https://innovission.in/sitemap.xml
