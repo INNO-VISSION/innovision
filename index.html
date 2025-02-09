@@ -136,7 +136,40 @@
                 window.addEventListener('scroll', revealOnScroll);
                 revealOnScroll();
             });
-        </script>
+
+            const homeSection = document.querySelector('.home');
+            const homeText = document.querySelector('.home-text');
+            const startLearningButton = document.querySelector('.start-learning');
+
+            const animateHomeSection = () => {
+                homeSection.style.opacity = 0;
+                homeSection.style.transform = 'translateY(50px)';
+                homeText.style.opacity = 0;
+                homeText.style.transform = 'translateY(50px)';
+                startLearningButton.style.opacity = 0;
+                startLearningButton.style.transform = 'translateY(50px)';
+
+                setTimeout(() => {
+                    homeSection.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+                    homeSection.style.opacity = 1;
+                    homeSection.style.transform = 'translateY(0)';
+                }, 100);
+
+                setTimeout(() => {
+                    homeText.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+                    homeText.style.opacity = 1;
+                    homeText.style.transform = 'translateY(0)';
+                }, 500);
+
+                setTimeout(() => {
+                    startLearningButton.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
+                    startLearningButton.style.opacity = 1;
+                    startLearningButton.style.transform = 'translateY(0)';
+                }, 1000);
+            };
+
+            window.addEventListener('load', animateHomeSection);
+                    </script>
     </section>
     <!-- <section id="domains" class="courses-section">
         <h2>Streaming<span> Courses</span></h2>
@@ -321,19 +354,6 @@
         <a href="blog.html" class="explore-more">Explore More Blogs</a>
 
     </section>
-    <!-- <section id="contact">
-        <div class="contact-content">
-            <h2>Contact <span>Us</span></h2>
-            <p>Have a question or feedback? Feel free to reach out to us. We'd love to hear from you!</p>
-            <form action="app.py" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-
-        </div>
-    </section> -->
     <!-- Footer -->
     <footer>
         <div class="footer-container">

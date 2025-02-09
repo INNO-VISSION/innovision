@@ -19,7 +19,7 @@
 }
 
 body {
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    background-color: white;
     top: 0 !important;
     width: 100%;
     font-family: "Noto Sans", sans-serif;

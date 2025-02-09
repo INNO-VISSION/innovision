@@ -52,10 +52,11 @@ body {
     border: 1px solid #000000;
     box-sizing: border-box;
     overflow: hidden;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .sidebar ul a:hover {
-    background-color: #0f7c9e;
+    background-color: #35b6dd;
     transform: scale(1.1);
     overflow: visible;
     white-space: normal;
