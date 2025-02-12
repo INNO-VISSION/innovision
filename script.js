@@ -185,12 +185,14 @@ const courseWeeks = {
     python: [
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2001/' },
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%202/' },
-        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2003/' }
+        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2003/' },
+        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/joy%20of%20computing%20using%20python/week%2004/' }
     ],
     c: [
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2001/' },
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2002/' },
-        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2003/' }
+        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2003/' },
+        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2004/' }
     ],
     oo: [
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Fundamental%20of%20Object%20Oriented%20Programming/week%2001/' },
@@ -221,7 +223,10 @@ const courseWeeks = {
     ],
     python_pro: [
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%2002/' },
-        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%2003/' }
+        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%2003/' },
+        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%2004/' }
+
+
     ],
     java_pro: [
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/java%20programming%20assignment/week01/' },
@@ -229,7 +234,9 @@ const courseWeeks = {
         { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/java%20programming%20assignment/week%2003/' }
     ],
     c_pro: [
-        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Using%20C%20Programming%20%20Assignment/week%2003/' }
+        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Using%20C%20Programming%20%20Assignment/week%2003/' },
+        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Using%20C%20Programming%20%20Assignment/week%2004/' }
+
     ]
 };
 
