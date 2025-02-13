@@ -118,25 +118,6 @@
         </div>
         <a href="nptel.html" class="start-learning">Let's Start Learning</a>
         <script>
-            document.addEventListener('DOMContentLoaded', () => {
-                const revealSection = document.querySelector('#home');
-
-                const isInViewport = (element) => {
-                    const rect = element.getBoundingClientRect();
-                    return rect.top < window.innerHeight && rect.bottom > 0;
-                };
-
-                const revealOnScroll = () => {
-                    if (isInViewport(revealSection)) {
-                        revealSection.classList.add('revealed');
-                        window.removeEventListener('scroll', revealOnScroll);
-                    }
-                };
-
-                window.addEventListener('scroll', revealOnScroll);
-                revealOnScroll();
-            });
-
             const homeSection = document.querySelector('.home');
             const homeText = document.querySelector('.home-text');
             const startLearningButton = document.querySelector('.start-learning');
