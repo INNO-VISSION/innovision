@@ -33,6 +33,7 @@
     <link rel="icon" type="image/png" href="images\logo.png">
     <title>Innovission</title>
     <meta name="keywords" content="Innovission, Upskilling, Education, Online Courses, Learning free online courses">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
 
 <body>
@@ -85,9 +86,7 @@
         <div class="home-content">
             <div class="slider">
                 <div class="slides">
-                    <img src="images/img1.jpg" alt="home" class="slider-image">
-                    <!-- <img src="images/img2.jpg" alt="home" class="slider-image"> -->
-                    <!-- <img src="images/img3.jpg" alt="home" class="slider-image"> -->
+                    
                 </div>
             </div>
             <!-- <script>
@@ -151,6 +150,59 @@
 
             window.addEventListener('load', animateHomeSection);
                     </script>
+
+    </section>
+    <section>
+        <div class="resources">
+            <!-- <div class="resources-container">
+                <div class="card locked" id="basic-resume">
+                    <img src="" alt="Basic Resume">
+                    <div class="lock-icon">🔒</div>
+                    <div class="card-content">
+                        <h3>Basic Resume</h3>
+                        <p>Price: ₹9/-</p>
+                        <button onclick="payNow('basic-resume', 9)">Get Started</button>
+                    </div>
+                </div> -->
+<!--                 
+                <div class="card free-card">
+                    <img src="images/img2.jpg" alt="Free Resume Templates">
+                    <div class="card-content">
+                        <h3>Resume Templates (Free)</h3>
+                        <p>Price: Free</p>
+                        <button>Download Now</button>
+                    </div>
+                </div> -->
+                
+            </div>
+
+        </div>
+        <script>
+            function payNow(cardId, amount) {
+            var options = {
+                "key": "rzp_test_yourActualKeyHere", 
+                "amount": amount * 100, 
+                "currency": "INR",
+                "name": "Resume Services",
+                "description": "Payment for resume service",
+                "handler": function (response) {
+                    alert("Payment Successful! Transaction ID: " + response.razorpay_payment_id);
+                    document.getElementById(cardId).classList.remove("locked");
+                    document.getElementById(cardId).classList.add("unlocked");
+                },
+                "prefill": {
+                    "name": "",
+                    "email": "",
+                    "contact": ""
+                },
+                "theme": {
+                    "color": "#007bff"
+                }
+            };
+            var rzp = new Razorpay(options);
+            rzp.open();
+        }
+        </script>
     </section>
     <!-- <section id="domains" class="courses-section">
         <h2>Streaming<span> Courses</span></h2>
