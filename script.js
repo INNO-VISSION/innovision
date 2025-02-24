@@ -175,7 +175,11 @@ const courseWeeks = {
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2001/' },
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2002/' },
         { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2003/' },
-        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2004/' }
+        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2004/' },
+        { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2005/' },
+        { week: 6, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Introduction%20To%20Industry%204.0%20And%20Industrial%20Internet%20Of%20Things/week%2006/' }
+
+
 
     ],
     java: [
@@ -195,7 +199,11 @@ const courseWeeks = {
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2001/' },
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2002/' },
         { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2003/' },
-        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2004/' }
+        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2004/' },
+        { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2005/' },
+        { week: 6, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Programming%20In%20C/week%2006/' }
+
+
     ],
     oo: [
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Fundamental%20of%20Object%20Oriented%20Programming/week%2001/' },
