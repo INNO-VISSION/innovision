@@ -165,7 +165,10 @@ const courseWeeks = {
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2001/' },
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2002/' },
         { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2003/' },
-        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2004/' }
+        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2004/' },
+        { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/Week%2005/' },
+        { week: 6, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Internet%20Of%20Things/week%2006/' }
+
 
     ],
     iot: [
