@@ -2,37 +2,42 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovission - Upskilling Platform for the Future</title>
+    <meta name="description"
+        content="Innovission: Your go-to platform for upskilling. Access engaging online courses and educational content designed to empower your future. Start learning today!">
+    <meta name="keywords"
+        content="Innovission, upskilling, online courses, education, e-learning, professional development, skill enhancement, online learning platform, future skills, Bharat, India, technology courses">
+    <meta name="author" content="Innovission Team">
+    <link rel="canonical" href="https://innovission.in/">
+    
+    <meta property="og:title" content="Innovission - Empowering India's Future through Upskilling">
+    <meta property="og:description"
+        content="Innovission provides educational content and courses through online platforms. Our mission is to make learning accessible and engaging for everyone, everywhere.">
+    <meta property="og:image" content="https://www.innovission.in/images/cover.jpg">
+    <meta property="og:url" content="https://innovission.in/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Innovission">
+     <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <meta name="publish_date" content="2024-12-05">
+    <meta name="robots" content="index, follow">
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="team.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KBZ624HVHJ"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-KBZ624HVHJ');
     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Innovission - Empowering India's Future through Upskilling">
-    <meta property="og:description" content="Innovission provides educational content and courses through online platforms. Our mission is to make learning accessible and engaging for everyone, everywhere.">
-    <meta property="og:image" content="https://www.innovission.in/images/cover.jpg">
-    <meta property="og:url" content="https://innovission.in/">
-    <meta property="og:type" content=" website">
-    <meta property="og:site_name" content="Innovission">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta name="author" content="Innovission Team">
-    <meta name="publish_date" content="2024-12-05">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="team.css">
-    <link rel="icon" type="image/png" href="images\logo.png">
-    <title>Innovission</title>
-    <meta name="keywords" content="Innovission, Upskilling, Education, Online Courses, Learning free online courses">
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
 
@@ -40,28 +45,10 @@
     <header>
         <nav>
             <div class="logo">
-                <!-- <img src="images\logo.png" alt="Innovission Logo"> -->
-                <div class="logo-heading">
-                    <a href="index.html">
-                        <h2>INNO<span>VISSION</span></h2>
-                    </a>
-                </div>
+                <a href="index.html">
+                    <h2>INNO<span>VISSION</span></h2>
+                </a>
             </div>
-
-            <!-- <div class="search">
-                <div action="" id="search-form">
-                    <div id="search-bar" class="search-container">
-                        <input id="search-input" type="text" name="query" placeholder="Search..." class="search-bar" />
-                        <button id="search-button" type="button"><i class="fas fa-search"></i></button>
-                        <ul id="suggestions-list" class="suggestions"></ul>
-                    </div>
-                    <i id="search-icon" class="fas fa-search"></i>
-                  
-                </div>
-
-            </div> -->
-
-            <div class="social-icons"></div>
             <div class="menu-toggle" id="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -75,7 +62,6 @@
                     <li><a href="nptel.html">NPTEL</a></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <!-- <li><a href="domains.html">Domains</a></li> -->
                     <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -84,177 +70,18 @@
     </header>
     <section id="home" class="home">
         <div class="home-content">
-            <div class="slider">
-                <div class="slides">
-                    
-                </div>
-            </div>
-            <!-- <script>
-                let currentIndex = 0;
-
-                function showNextSlide() {
-                    const slides = document.querySelector('.slides');
-                    const totalSlides = slides.children.length;
-
-                    currentIndex = (currentIndex + 1) % totalSlides;
-
-                    const offset = -currentIndex * 100;
-                    slides.style.transition = 'transform 0.5s ease-in-out';
-                    slides.style.transform = `translateX(${offset}%)`;
-                }
-
-                function startSlider() {
-                    setInterval(showNextSlide, 3000); 
-                }
-
-                window.onload = startSlider;
-            </script> -->
             <div class="home-text">
-                <h2>What Is <span>Innovission</span></h2>
-                <p>Innovission provides educational content and courses through online platforms. Our mission is to make
-                    learning accessible and engaging for everyone, everywhere.</p>
+                <h2>What is <span>Innovission?</span></h2>
+                <p>Innovission provides educational content and courses through online platforms. Our mission is to make learning accessible and engaging for everyone, everywhere.</p>
             </div>
         </div>
-        <a href="nptel.html" class="start-learning">Let's Start Learning</a>
-        <script>
-            const homeSection = document.querySelector('.home');
-            const homeText = document.querySelector('.home-text');
-            const startLearningButton = document.querySelector('.start-learning');
-
-            const animateHomeSection = () => {
-                homeSection.style.opacity = 0;
-                homeSection.style.transform = 'translateY(50px)';
-                homeText.style.opacity = 0;
-                homeText.style.transform = 'translateY(50px)';
-                startLearningButton.style.opacity = 0;
-                startLearningButton.style.transform = 'translateY(50px)';
-
-                setTimeout(() => {
-                    homeSection.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
-                    homeSection.style.opacity = 1;
-                    homeSection.style.transform = 'translateY(0)';
-                }, 100);
-
-                setTimeout(() => {
-                    homeText.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
-                    homeText.style.opacity = 1;
-                    homeText.style.transform = 'translateY(0)';
-                }, 500);
-
-                setTimeout(() => {
-                    startLearningButton.style.transition = 'opacity 1s ease-out, transform 1s ease-out';
-                    startLearningButton.style.opacity = 1;
-                    startLearningButton.style.transform = 'translateY(0)';
-                }, 1000);
-            };
-
-            window.addEventListener('load', animateHomeSection);
-                    </script>
-
+        <a href="nptel.html" class="start-learning">Explore Courses</a>
     </section>
-    <section>
-        <div class="resources">
-            <!-- <div class="resources-container">
-                <div class="card locked" id="basic-resume">
-                    <img src="" alt="Basic Resume">
-                    <div class="lock-icon">🔒</div>
-                    <div class="card-content">
-                        <h3>Basic Resume</h3>
-                        <p>Price: ₹9/-</p>
-                        <button onclick="payNow('basic-resume', 9)">Get Started</button>
-                    </div>
-                </div> -->
-<!--                 
-                <div class="card free-card">
-                    <img src="images/img2.jpg" alt="Free Resume Templates">
-                    <div class="card-content">
-                        <h3>Resume Templates (Free)</h3>
-                        <p>Price: Free</p>
-                        <button>Download Now</button>
-                    </div>
-                </div> -->
-                
-            </div>
-
+    <section class="resources">
+        <div class="resources-container">
         </div>
-        <script>
-            function payNow(cardId, amount) {
-            var options = {
-                "key": "rzp_test_yourActualKeyHere", 
-                "amount": amount * 100, 
-                "currency": "INR",
-                "name": "Resume Services",
-                "description": "Payment for resume service",
-                "handler": function (response) {
-                    alert("Payment Successful! Transaction ID: " + response.razorpay_payment_id);
-                    document.getElementById(cardId).classList.remove("locked");
-                    document.getElementById(cardId).classList.add("unlocked");
-                },
-                "prefill": {
-                    "name": "",
-                    "email": "",
-                    "contact": ""
-                },
-                "theme": {
-                    "color": "#007bff"
-                }
-            };
-            var rzp = new Razorpay(options);
-            rzp.open();
-        }
-        </script>
     </section>
-    <!-- <section id="domains" class="courses-section">
-        <h2>Streaming<span> Courses</span></h2>
-        <div class="schedule-container">
-            <div class="session">
-                <div class="session-header">
-                    <span class="status">Streaming</span>
-                    <span class="date-time">17 Dec 2024 | 7:00 PM</span>
-                    <span class="new-tag">New</span>
-                </div>
-                <div class="session-details">
-                    <h3>Killer Presentation Skills</h3>
-                    <div class="actions">
-                        <a class="play-button" href="https://youtu.be/jkwTLbTTMJc?si=nA3GUoRVDsalu3XI" target="_blank">▶</a>
-                        <a href="#" class="feedback">Notes</a>
-                        <a href="#" class="feedback">Feedback?</a>
-                    </div>
-                </div>
-            </div>
-            <div class="session">
-                <div class="session-header">
-                    <span class="status">Streaming</span>
-                    <span class="date-time">13 Dec 2024 | 7:00 PM</span>
-                    <span class="new-tag">New</span>
-                </div>
-                <div class="session-details">
-                    <h3>Introduction To PowerBI</h3>
-                    <div class="actions">
-                        <a class="play-button" href="https://youtu.be/pQ7sEAipEx0?si=-2qyDd6huEcAqk1N" target="_blank">▶</a>
-                        <a href="#" class="feedback">Notes</a>
-                        <a href="#" class="feedback">Feedback?</a>
-                    </div>
-                </div>
-            </div>
-            <div class="session">
-                <div class="session-header">
-                    <span class="status">Streaming</span>
-                    <span class="date-time">10 Dec 2024 | 7:00 PM</span>
-                    <span class="new-tag">New</span>
-                </div>
-                <div class="session-details">
-                    <h3>Resume Building</h3>
-                    <div class="actions">
-                        <a class="play-button" href="https://youtu.be/PNc0PBJdpbg?si=Q_0DFKeM7wJurSup" target="_blank">▶</a>
-                        <a href="#" class="feedback">Notes</a>
-                        <a href="#" class="feedback">Feedback?</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <section id="about">
+    <section id="about" class="about">
         <div class="about-content">
             <h1>About <span>Us</span></h1>
             <p><span>Innovission:</span> Empowering India’s Future through Upskilling. Our mission is to enhance
@@ -265,116 +92,32 @@
             <h6>Join us on our mission to make education a lifelong journey and empower individuals to achieve their
                 full potential.</h6>
         </div>
-        <!-- <section class="team-section">
-            <div class="team-content">
-                <h1>Meet Our Team</h1>
-                <p>Our team is composed of dedicated professionals who are passionate about technology and innovation. Each
-                    member brings unique skills and expertise to the table, working collaboratively to drive our mission
-                    forward. Together, we strive to create impactful solutions and empower individuals through education and
-                    upskilling.</p>
-                <a href="contact.html" class="contact-button">Contact Us</a>
-            </div>
-            <div class="team-container">
-                <div class="team-member" style="top: 10%; left: 10%;">
-                    <img src="images/pramod-img.png" alt="">
-                    <h3>PRAMOD REDDY</h3>
-                    <p class="role">Founder</p>
-                    <div class="member-social-icons">
-                        <a href="https://www.linkedin.com/in/vpramodreddy?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/pramod6005_/profilecard/?igsh=MW83OXVkdHY1cDZ5bg==" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="team-member" style="top: 40%; left: 30%;">
-                    <img src="images/redappa-img.jpg" alt="">
-                    <h3>REDEPPA M</h3>
-                    <p class="role">Database Programmer</p>
-                    <div class="member-social-icons">
-                        <a href="https://www.linkedin.com/in/masireddy-reddeppa-reddy-a5248a2b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/psycho_reddy_2005/profilecard/?igsh=Ym0yYTZtdDh3MGt3" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="team-member" style="top: 20%; left: 60%;">
-                    <img src="images/rani-img.png" alt="">
-                    <h3>REDDY RANI</h3>
-                    <p class="role">Web Developer</p>
-                    <div class="member-social-icons">     
-                        <a href="https://www.linkedin.com/in/reddy-rani-beedhagani-ba86462b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/raniyadav1408/profilecard/?igsh=MTA5NWg2aWoyNGU2eg==" target="_blank"><i class="fab fa-instagram"></i></a>
-                       
-                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="team-member" style="top: 60%; left: 50%;">
-                    <img src="images/shanthi-img.jpg" alt="">
-                    <h3>SANTHI M</h3>
-                    <p class="role">Python Developer</p>
-                    <div class="member-social-icons">
-                        <a href="https://www.linkedin.com/in/masireddy-santhi-a33619289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/masireddysanthi?igsh=MW1xZTMxOTVwcmg0ZQ==" target="_blank"><i class="fab fa-instagram"></i></a>         
-                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="team-member" style="top: 60%; left: 50%;">
-                    <img src="images/sruthi-img.jpg" alt="">
-                    <h3>SRUTHI CHOWDARY</h3>
-                    <p class="role">Soft Skills Trainer</p>
-                    <div class="member-social-icons">
-                        <a href="https://www.linkedin.com/in/sruthi-durgirala-50969b294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/sruthi.chowdary_45?utm_source=qr&igsh=MWg1b2VlZm14bW8zdQ==" target="_blank"><i class="fab fa-instagram"></i></a>             
-                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="team-member" style="top: 60%; left: 50%;">
-                    <img src="images/jahnavi_img.jpg" alt="">
-                    <h3>JAHNAVI B</h3>
-                    <p class="role">Power BI Developer</p>
-                    <div class="member-social-icons">
-                        <a href="hhttps://www.linkedin.com/in/bodireddy-jahnavi-47563a255" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                       
-                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                    </div>
-                </div>
-                <div class="team-member" style="top: 60%; left: 50%;">
-                    <img src="images/hemanth-img.png" alt="">
-                    <h3>HEMANTH</h3>
-                    <p class="role">Java Developer</p>
-                    <div class="member-social-icons">
-                        <a href="https://www.linkedin.com/in/hemanthkumar-k-s?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/hemanthprashanth5?igsh=MTZ3ZWhyb2xhOGhodg==" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://x.com/Hemanth22269502?s=08" target="_blank"><i class="fa-brands fa-x-twitter"></i></i></a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
+        <div class="about-image">
+            <img src="./images/logo-transperent.png" alt="">
+        </div>
     </section>
     <section id="blog" class="blog">
-        <div class="domains-content">
+        <div class="blog-content">
             <h2>Our <span>Blog</span></h2>
             <p>Stay updated with the latest trends, tips, and insights from the world of technology and education.</p>
-            <div class="courses">
-                <div class="course-card">
-                    <div class="course-info"></div>
-                    <div class="course-info">
+            <div class="blog-cards">
+                <div class="blog-card">
+                    <div class="blog-info">
                         <h3>Introduction to Quantum Computing</h3>
                         <p>Learn about the basics of quantum computing and how it differs from classical computing.</p>
                         <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
-                <div class="course-card">
-                    <!-- <img src="path/to/blog4.jpg" alt="Blog 4" class="blog-image"> -->
-                    <div class="course-info">
+                <div class="blog-card">
+                    <div class="blog-info">
                         <h3>Future of Blockchain</h3>
                         <p>Discover how blockchain technology is revolutionizing various sectors and what the future
                             holds for this innovative technology.</p>
                         <a href="#" class="read-more-btn">Read More</a>
                     </div>
                 </div>
-                <div class="course-card">
-                    <!-- <img src="images/blog3.jpg" alt="Blog 3" class="blog-image"> -->
-                    <div class="course-info">
+                <div class="blog-card">
+                    <div class="blog-info">
                         <h3>Advancements in AI</h3>
                         <p>Explore the latest advancements in artificial intelligence and their impact on various
                             industries.</p>
@@ -382,21 +125,14 @@
                     </div>
                 </div>
             </div>
-
         </div>
         <a href="blog.html" class="explore-more">Explore More Blogs</a>
-
     </section>
-    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Sitemap</h3>
                 <ul>
-                    <!-- <li><a href="index.html">Home</a></li> -->
-                    <!-- <li><a href="about.html">About</a></li> -->
-                    <!-- <li><a href="domains.html">Domains</a></li> -->
-                    <!-- <li><a href="blog.html">Blog</a></li> -->
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="privacy.html">Privacy Policy</a></li>
                     <li><a href="terms&conditions.html">Terms and Conditions</a></li>
@@ -423,19 +159,7 @@
                     <li><a href="#">Case Studies</a></li>
                 </ul>
             </div>
-            <!-- <div class="footer-section">
-                <h3>Help</h3>
-                <ul>
-                    <li><a href="#">Getting started</a></li>
-                    <li><a href="#">Network status</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Referral program</a></li>
-                </ul>
-            </div> -->
             <div class="footer-section subscribe">
-                <!-- <h3>Subscribe</h3>
-                <input type="email" placeholder="Enter email address" id="email">
-                <button onclick="subscribe()">Send</button> -->
                 <div class="social-icons">
                     <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/innovisio.n/profilecard/?igsh=OHoxZXdsb245bnpp"

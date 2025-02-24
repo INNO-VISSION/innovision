@@ -499,3 +499,25 @@ body {
         height: 800px;
     }
 }
+
+.week-list ul li a {
+    display: block;
+    padding: 12px 15px;
+    margin: 8px 0;
+    background-color: #f5f5f5;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+}
+
+.week-list ul li a:hover {
+    background-color: #007BFF;
+    color: white;
+    transform: translateX(5px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.week-list ul li a:active {
+    transform: translateX(3px);
+    background-color: #0056b3;
+}
