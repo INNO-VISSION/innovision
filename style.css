@@ -264,10 +264,10 @@ nav {
     transition: 2s;
 }
 .slide img {
-    width: 80%;
+    width: 90%;
     height: auto;
-    max-height: 450px;
-    object-fit: cover;
+    max-height: 500px;
+    object-fit: cover;  
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 20px;
