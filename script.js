@@ -253,7 +253,9 @@ const courseWeeks = {
     java_pro: [
         { week: 1, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/java%20programming%20assignment/week01/' },
         { week: 2, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/java%20programming%20assignment/week%2002/' },
-        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/java%20programming%20assignment/week%2003/' }
+        { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/java%20programming%20assignment/week%2003/' },
+        { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/java%20programming%20assignment/week%2004/' },
+        { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/java%20programming%20assignment/week%2005/' }
     ],
     c_pro: [
         { week: 3, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-//Problem%20Solving%20Through%20Using%20C%20Programming%20%20Assignment/week%2003/' },
