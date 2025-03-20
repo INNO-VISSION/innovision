@@ -196,6 +196,7 @@ const courseWeeks = {
         { week: 4, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2004/' },
         { week: 5, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2005/' },
         { week: 6, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2006/' },
+        { week: 7, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2007/' },
         { week: 7, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/PROGRAMMING%20IN%20JAVA/week%2007/' }
 
 
