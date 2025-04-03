@@ -280,7 +280,7 @@ const courseWeeks = {
         { week: 7, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%2007/' },
         { week: 8, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%2008/' },
         { week: 9, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%2009/' },
-        { week: 10, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%20010/' }
+        { week: 10, pdf: 'https://inno-vission.github.io/NPTEL-ANSWERS-2025-JAN-APR-/Joy%20Of%20Computing%20Using%20Python%20Programming%20Assignment/week%2010/' }
         
         
         
